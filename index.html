@@ -6,42 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity</title>
     <script src="https://kit.fontawesome.com/b38b2d872c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <header class="header">
-        <div class="container">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item_current"><a class="menu__link" href="#">Как помочь</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Подопечные животные</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#"><i class="fa fa-vk fa-2x"></i></a></li>
-                    <li class="menu__item"><a class="menu__link" href="#"><i class="fa fa-instagram fa-2x"></i></a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container header__container">
+            <div class="banner">
+                <div class="hover"></div>
+                <div class="hover__text">Я буду</div>
+                <div class="hover__text_bottom">лучшим</div>
+                <div class="hover__text_right">другом</div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_current"><a class="menu__link" href="#">Как помочь</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Подопечные животные</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                        <li class="menu__item icon"><a class="menu__link" href="https://vk.com/animalsgrodno"> <i class='fab fa-vk' style='font-size:27px;color:white'></i></a></li>
+                        <li class="menu__item icon"><a class="menu__link" href="https://www.instagram.com/animalsgrodno/"> <i class='fab fa-instagram' style='font-size:27px;color:white'></i> </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="save-life__header">
+                    <div class="save-life__title">СПАСИ ЖИЗНЬ</div>
+                    <div class="save-life__text save-life__text_color">Благотворительное общественное объединение
+                        защиты
+                        животных</div>
+                    <div class="save-life__text save-life__text_size">Наша цель: помощь бездомным животных. Мы
+                        поддерживаем
+                        хвостиков, которые
+                        оказались в пункте отлова и временного содержания в Гродно. </div>
+                </div>
+                <div class="save-life__text_pos brown">У животных, находящихся в пункте отлова и временного содержания
+                    бродячих
+                    животных, есть всего несколько дней до усыпления...</div>
+                <a href="#how-to-help" class="btn save-life__btn">Хочу помочь</a>
+            </div>  
         </div>
     </header>
-
-    <section class="save-life">
-        <div class="container">
-            <div class="save-life__header">
-                <div class="save-life__title">СПАСИ ЖИЗНЬ</div>
-                <div class="save-life__text save-life__text_color">Благотворительное общественное объединение защиты
-                    животных</div>
-                <div class="save-life__text save-life__text_size">Наша цель: помощь бездомным животных. Мы поддерживаем
-                    хвостиков, которые
-                    оказались в пункте отлова и временного содержания в Гродно. </div>
-            </div>
-            <div class="save-life__text_pos">У животных, находящихся в пункте отлова и временного содержания бродячих
-                животных, есть всего несколько дней до усыпления...</div>
-            <button class="btn save-life__btn">Действие</button>
-        </div>
-    </section>
 
     <section class="info">
         <div class="container">
@@ -68,7 +74,7 @@
 
     <section class="help">
         <div class="container">
-            <div class="help__title title">Как помочь?</div>
+            <div id="how-to-help" class="help__title title">Как помочь?</div>
             <div class="help__gallery">
                 <div class="item-help">
                     <div class="item-help__img img-item">
@@ -111,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="help__info-img img-item">
                 <img class="separator" src="./i/Ellipse01.jpg" alt="dog">
             </div>
