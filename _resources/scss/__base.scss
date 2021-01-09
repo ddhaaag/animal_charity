@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+// main colors
+$primary-dark: #242424;
+$primary-gray: #6B6B6B;
+$primary-yellow: #C78100;
+
+// background colors
+$gray-bg: #E5E5E5;
+$white-bg: #FFFFFF;
+$yellow-bg: #FBC832;
+
+// Gilroy Regular
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('/fonts/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
+        url('/fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
+        url('/fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype');
+}
+
+// Gilroy Bold
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
+        url('/fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Bold'),
+        url('/fonts/Gilrpy-Light/Gilroy-Light.woff') format('woff'),
+        url('/fonts/Gilrpy-Light/Gilroy-Light.ttf') format('truetype');
+}
+
+@mixin btn-style {
+    background: #FBC832;
+    border-radius: 58px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: $primary-dark;
+    border: none;
+    cursor: pointer;
+    padding: 5px 33px 5px 32px;
+    text-decoration: none;
+}
+

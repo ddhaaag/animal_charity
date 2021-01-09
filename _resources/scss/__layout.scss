@@ -1,0 +1,455 @@
+/* HEADER */
+
+.header {
+    height: 164px;
+}
+
+.menu {
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin: 54px 32px 91px 0; 
+    }
+    &__item:nth-child(2) {
+        margin-right: 194px;
+    }
+    &__item:nth-child(4) {
+        margin-right: 289px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $primary-dark;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+    }
+}
+
+.menu__inner {
+    display: block;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 28px;
+}
+
+.more-info__inner:last-child {
+    margin-right: 0;
+}
+/* MAIN */
+
+/* SAFE LIFE */
+
+.banner {
+    // height: 670px;
+}
+
+.save-life {
+    background: #E5E5E5;
+    &__header {
+        width: 659px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 87px;
+        color: #242424;
+    }
+    &__text--color {
+        color: #6B6B6B;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    &__text--size {
+        line-height: 140%;
+        margin-bottom: 43px;
+    }
+    &__text--pos {
+        width: 415px;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 44px;
+        color: $primary-yellow;
+    } 
+    &__btn {
+        padding: 5px 33px 5px 32px;
+        text-decoration: none;
+    }
+}
+
+.btn {
+    @include btn-style;  
+}
+
+.button {
+    margin-bottom: 272px;
+}
+
+// .fa-vk {
+//     position: absolute;
+//     top: 12px;
+//     left: 6px;
+// }
+
+// .fa-instagram {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+// }
+
+.hover__text {
+    position: absolute;
+    width: 599px;
+    height: 192px;
+    left: 268px;
+    top: 475px;     
+    opacity: 0.2;
+    font-size: 12rem;
+    color: #fff;
+}
+
+.hover__text--bottom {
+    position: absolute;
+    width: 599px;
+    height: 192px;
+    left: 268px;
+    top: 610px;     
+    opacity: 0.2;
+    font-size: 9.2rem;
+    color: #fff;
+}
+
+.hover__text--right {
+    position: absolute;
+    width: 599px;
+    height: 192px;
+    left: 545px;
+    top: 695px;     
+    opacity: 0.2;
+    font-size: 9.2rem;
+    color: #fff;
+}
+
+//  Info about charity 
+
+.info {
+    // margin: 74px 0 74px 0;
+    height: 650px;
+    position: relative;
+    background-color: $white-bg;
+    z-index: 1;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img + .info__text-block {
+        margin-left: 73px;
+    }
+    &__text-block {
+        width: 100%;
+        margin-top: 128px;
+        max-width: 466px;
+    }
+    &__title {
+        margin-bottom: 28px;
+        text-align: center;
+        color: $primary-yellow;
+    }    
+    &__text {
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
+.rect-img__item1 {
+    // position: absolute;
+    // top: 10%;
+    // left: 100px;
+    // z-index: 10;
+    // margin-right: 20px;
+}
+
+// .rect-img__item2 {
+//     position: absolute;
+//     top: 10%;
+//     left: 0;
+// }
+
+/* HELP SECTION */
+
+.help__title-main {
+    text-align: center;
+    margin-bottom: 47px;
+    padding-top: 80px;
+    font-weight: 300;
+}
+
+.help__gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.item-help {
+    // margin-right: 95px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-help:last-child {
+    margin: 0;
+}
+
+.item-help__img {
+    margin-bottom: 24px;
+    
+}
+
+.item-help__text {
+    margin-bottom: 71px;
+    width: 166px;
+    text-align: center;
+}
+
+.help__info-img {
+    text-align: center;
+    position: relative;
+    margin-bottom: 68px;
+}
+
+.help__info-img::after {
+    content: ''; 
+    position: absolute;
+    top: 70px;
+    right: -100px;
+    height: 2px;
+    width: 576px;
+    display: block;
+    // color: #EEBF3A;
+    background-color: #EEBF3A;
+}
+
+.help__info-img::before {
+    content: ''; 
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    height: 2px;
+    width: 576px;
+    display: block;
+    // color: #EEBF3A;
+    background-color: #EEBF3A;
+}
+
+.help__home {
+    display: flex;
+    justify-content: center;
+}
+
+.help__info {
+    width: 389px;
+    margin-left: 97px;
+}
+
+.help__title {
+    margin-bottom: 20px;
+}
+
+.help__text {
+    margin-bottom: 72px;
+}
+
+/* ANIMAL */
+
+.animals__gallery {
+    display: flex;  
+    flex-flow: row wrap;
+}
+
+.animals__img-wrapper {
+    margin-right: 20px;
+}
+
+.animals__img-wrapper:nth-child(3n) {
+    margin-right: 0;
+}
+
+.animals__btns {
+    height: 139px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animals__title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.animals__item {
+    height: 555px;
+    width: 368px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+    border: 1px solid #D6D6D6;
+    background-color: $white-bg;
+}
+
+.animals__btns:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.animals__item:hover {
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+}
+
+.animals__inner {
+    padding: 16px 16px 16px 17px;
+}
+
+.animal__img-name {
+    font-family: 'Gilroy';
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 8px;
+    // border-bottom: 1px solid #D6D6D6;
+}
+
+.animal__img-name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #d6d6d6;
+    width: 100%;
+    margin-top: 10px; 
+}
+
+.animal__img-disc {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $primary-gray;
+    text-align: left;
+    margin: 8px 0 6px;
+}
+
+.animal__img-text {
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;   
+}
+
+.animal-img {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+}
+
+.animal-img img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+
+.animal-img img:hover {
+    transform: scale(1.1); /* Увеличиваем масштаб */
+}
+
+.animals__btns--indent {
+    margin-bottom: 17px;
+}
+
+.btn--style {
+    background: $gray-bg;
+    border: 2px solid #FBC832;
+}
+
+.animals__info a {
+    display: block;
+    height: 40px;
+    width: 204px;
+    margin: 0 auto;
+    color: #AD7F00;
+}
+
+
+.animals__info a:hover {
+    text-decoration: none;
+}
+
+.animlas__more-info {
+    display: flex;  
+    justify-content: center;
+    margin: 65px 0 76px;
+}
+
+.more-info__text {
+    width: 583px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.more-info__social {
+    display: flex;
+    margin-left: 38px;
+    margin-bottom: 78px;
+}
+
+.more-info__inner {
+    display: block;
+    width: 49px;
+    height: 49px;
+    border: 2px solid #FFC41E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32px;
+}
+
+.more-info__inner:last-child {
+    margin-right: 0;
+}
+
+
+/* BUTTUNS */
+
+.btn:hover {
+    background: $primary-dark;
+    color: #FBC832;
+}
+
+.btn--style:hover {
+    background: $gray-bg;
+    color: #fbc832;
+    border: 2px solid $primary-dark;
+}
+
+
+/* FINANCIAL HELP */
+
+.financial-help {
+    padding-top: 46px;
+    height: 681px;
+    background-color: $white-bg;
+}
