@@ -213,30 +213,29 @@
 
 .help__info-img {
   text-align: center;
-  position: relative;
   margin-bottom: 68px;
+  overflow: hidden;
 }
 
-.help__info-img::after {
+.help__info-img::after,
+.help__info-img::before {
   content: "";
-  position: absolute;
-  top: 70px;
-  right: -100px;
+  position: relative;
   height: 2px;
-  width: 576px;
-  display: block;
+  vertical-align: middle;
+  width: 50%;
+  display: inline-block;
   background-color: #EEBF3A;
 }
 
 .help__info-img::before {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: -100px;
-  height: 2px;
-  width: 576px;
-  display: block;
-  background-color: #EEBF3A;
+  top: -70px;
+  margin-left: -50%;
+}
+
+.help__info-img::after {
+  top: -70px;
+  margin-right: -50%;
 }
 
 .help__home {
@@ -429,10 +428,158 @@
 }
 
 /* FINANCIAL HELP */
+.helph__pos {
+  padding-top: 49px;
+}
+
 .financial-help {
   padding-top: 46px;
   height: 681px;
   background-color: #FFFFFF;
+}
+
+.financial-help__outer {
+  max-width: 758px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.financial-help__title {
+  margin-bottom: 24px;
+}
+
+.financial-help__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6B6B6B;
+}
+
+.financial-donate {
+  display: flex;
+  justify-content: center;
+}
+
+.financial-donate__bill {
+  width: 389px;
+  margin-right: 97px;
+}
+
+.financial-donate__donation {
+  width: 389px;
+}
+
+.bill-data {
+  height: 164px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.bill-data p {
+  margin-bottom: 10px;
+}
+
+.bill-data p:last-child {
+  margin-bottom: 0;
+}
+
+.finance-title {
+  font-family: Gilroy;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.donat-info {
+  height: 218px;
+  width: 389px;
+}
+
+.donat-info__list li {
+  margin-bottom: 10px;
+}
+
+.donat-info__list li:last-child {
+  margin-bottom: 0;
+}
+
+.help-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.helph-container-top {
+  width: 660px;
+  margin-bottom: 40px;
+}
+
+.helph__title {
+  font-size: 28px;
+  line-height: 86%;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.helph__text {
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.helph-container-bot {
+  width: 678px;
+  margin-bottom: 16px;
+}
+
+.helph__info-link {
+  margin-bottom: 78px;
+}
+
+.helph__info-link a {
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+  color: #AD7F00;
+}
+
+/* AUTO HELP */
+.auto-help-container {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 82px;
+}
+
+.auto-help__info {
+  width: 680px;
+}
+
+.auto__title {
+  font-size: 28px;
+  line-height: 86%;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.auto__text {
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-bottom: 24px;
+}
+
+/* VOLUNTEERING */
+.volun-inner {
+  display: flex;
 }
 
 * {
