@@ -5,10 +5,16 @@
   padding: 0;
 }
 
+/*main colors */
+/*background colors */
+/* font-size */
+/* Font Family */
+/* Gilroy Regular */
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy Regular"), local("Gilroy-Regular"), url("/fonts/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("/fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype");
 }
+/* Gilroy Bold */
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy-Bold/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype");
@@ -456,7 +462,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  color: #6B6B6B;
+  color: #474747;
 }
 
 .financial-donate {
@@ -588,9 +594,13 @@
   padding: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
-  font-family: "Gilroy";
-  font-size: 16px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 1.6rem;
   color: #242424;
   font-weight: 600;
   line-height: 19px;

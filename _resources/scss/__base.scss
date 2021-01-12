@@ -4,17 +4,36 @@
     padding: 0;
 }  
 
-// main colors
-$primary-dark: #242424;
-$primary-gray: #6B6B6B;
-$primary-yellow: #C78100;
+/*main colors */
 
-// background colors
-$gray-bg: #E5E5E5;
+$color-main: #242424; // Основной цвет
+$color-secondary: #474747; // дополнительный цвет
+
+$black: #000000;
+$gray: #6B6B6B; 
+$gray-light: #b3b3b3;
+$orange: #C78100;
+$gold: #ad7f00;
+
+/*background colors */
+
+$main-bg: #E5E5E5;
 $white-bg: #FFFFFF;
 $yellow-bg: #FBC832;
 
-// Gilroy Regular
+/* font-size */
+$font-size: 1.6rem;
+$font-size--h1: 7.2rem;
+$font-size--h3: 2.8rem;
+$font-size--h4: 2.2rem;
+$font-size--btns: 2.0rem;
+$font-size--small: 1.4rem;
+$font-size--large: 1.8rem;
+
+/* Font Family */
+$font-family: 'Gilroy', Arial, sans-serif;
+
+/* Gilroy Regular */
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Regular'), local('Gilroy-Regular'),
@@ -23,7 +42,7 @@ $yellow-bg: #FBC832;
         url('/fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype');
 }
 
-// Gilroy Bold
+/* Gilroy Bold */
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Bold'), local('Gilroy-Bold'),
@@ -45,7 +64,7 @@ $yellow-bg: #FBC832;
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
-    color: $primary-dark;
+    color: $color-main;
     border: none;
     cursor: pointer;
     padding: 5px 33px 5px 32px;

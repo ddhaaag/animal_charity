@@ -8,13 +8,17 @@
     padding: 0;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
-    font-family: 'Gilroy';
-    font-size: 16px;
-    color: $primary-dark;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color-main;
     font-weight: 600;
     line-height: 19px;  
-    background-color: $gray-bg;
+    background-color: $main-bg;
     position: relative;
 }
 

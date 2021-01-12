@@ -21,7 +21,7 @@
     }
     &__link {
         text-decoration: none;
-        color: $primary-dark;
+        color: $color-main;
     }
     &__social {
         display: flex;
@@ -79,7 +79,7 @@
         font-size: 24px;
         line-height: 29px;
         margin-bottom: 44px;
-        color: $primary-yellow;
+        color: $orange;
     } 
     &__btn {
         padding: 5px 33px 5px 32px;
@@ -94,18 +94,6 @@
 .button {
     margin-bottom: 272px;
 }
-
-// .fa-vk {
-//     position: absolute;
-//     top: 12px;
-//     left: 6px;
-// }
-
-// .fa-instagram {
-//     position: absolute;
-//     top: 10px;
-//     left: 10px;
-// }
 
 .hover__text {
     position: absolute;
@@ -164,7 +152,7 @@
     &__title {
         margin-bottom: 28px;
         text-align: center;
-        color: $primary-yellow;
+        color: $orange;
     }    
     &__text {
         margin-bottom: 20px;
@@ -347,7 +335,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    color: $primary-gray;
+    color: $gray;
     text-align: left;
     margin: 8px 0 6px;
 }
@@ -379,7 +367,7 @@
 }
 
 .btn--style {
-    background: $gray-bg;
+    background: $main-bg;
     border: 2px solid #FBC832;
 }
 
@@ -434,14 +422,14 @@
 /* BUTTUNS */
 
 .btn:hover {
-    background: $primary-dark;
+    background: $color-main;
     color: #FBC832;
 }
 
 .btn--style:hover {
-    background: $gray-bg;
+    background: $main-bg;
     color: #fbc832;
-    border: 2px solid $primary-dark;
+    border: 2px solid $color-main;
 }
 
 
@@ -475,7 +463,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: $primary-gray;
+    color: $color-secondary;
 }
 
 .financial-donate {
