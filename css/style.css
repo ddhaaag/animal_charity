@@ -24,36 +24,31 @@
   src: local("Gilroy Light"), local("Gilroy-Bold"), url("/fonts/Gilrpy-Light/Gilroy-Light.woff") format("woff"), url("/fonts/Gilrpy-Light/Gilroy-Light.ttf") format("truetype");
 }
 /* HEADER */
-.header {
-  height: 164px;
-}
-
-.menu__list {
-  list-style-type: none;
-  display: flex;
+.menu {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 110px;
   align-items: center;
 }
-.menu__item {
-  margin: 54px 32px 91px 0;
+.menu__items:nth-child(1) {
+  grid-column: 1/span 3;
 }
-.menu__item:nth-child(2) {
-  margin-right: 194px;
+.menu__items:nth-child(2) {
+  grid-column: 5/span 3;
 }
-.menu__item:nth-child(4) {
-  margin-right: 289px;
+.menu__items:nth-child(3) {
+  grid-column: 9/span 2;
 }
 .menu__link {
   text-decoration: none;
   color: #242424;
-}
-.menu__social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -30px;
+  margin-right: 30px;
 }
 
-.menu__inner {
+.social-btns {
+  display: flex;
+}
+.social-btns__item {
   display: block;
   width: 49px;
   height: 49px;
@@ -63,6 +58,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 28px;
+  text-decoration: none;
 }
 
 .more-info__inner:last-child {
@@ -72,14 +68,11 @@
 /* MAIN */
 /* SAFE LIFE */
 .save-life {
-  background: #E5E5E5;
-}
-.save-life__header {
   width: 659px;
 }
 .save-life__title {
-  font-weight: bold;
-  font-size: 72px;
+  font-weight: 700;
+  font-size: 7.2rem;
   line-height: 87px;
   color: #242424;
 }
@@ -87,6 +80,7 @@
   color: #6B6B6B;
   font-weight: 300;
   margin-bottom: 10px;
+  line-height: 18.45px;
 }
 .save-life__text--size {
   line-height: 140%;
@@ -94,7 +88,7 @@
 }
 .save-life__text--pos {
   width: 415px;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 29px;
   margin-bottom: 44px;
   color: #C78100;
@@ -588,6 +582,15 @@
   display: flex;
 }
 
+.volun-image {
+  width: 100%;
+  height: auto;
+}
+
+.volun__info {
+  width: 466px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -599,11 +602,11 @@ html {
 }
 
 body {
-  font-family: "Gilroy", Arial, sans-serif;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 1.6rem;
   color: #242424;
   font-weight: 600;
-  line-height: 19px;
+  line-height: 22.4px;
   background-color: #E5E5E5;
   position: relative;
 }
@@ -628,16 +631,22 @@ img {
   max-width: 100%;
 }
 
-.text {
-  line-height: 140%;
-  font-weight: normal;
+.header {
+  width: 100%;
+  height: 834px;
+  background-image: url(/img/dog-1.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 20%;
 }
 
-.wrapper {
-  width: 100%;
-  background-image: url(/img/cat-1.png), url(/img/dog-1.png);
-  background-position: top 470px right 355px, top 0 right 190px;
-  background-repeat: no-repeat;
+.header::before {
+  content: "";
+  background-image: url(/img/cat-1.png);
+  width: 483px;
+  height: 469px;
+  display: block;
   position: absolute;
+  top: 7%;
+  right: 21.5%;
   z-index: 100;
 }

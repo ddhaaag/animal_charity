@@ -1,87 +1,95 @@
-    <!DOCTYPE html>
-    <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Charity</title>
-        <script src="https://kit.fontawesome.com/b38b2d872c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+    <script src="https://kit.fontawesome.com/b38b2d872c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <body>
+<body>
 
-        <div class="wrapper">
-            
-                <header class="header">
-            
-                    <div class="container">
-                        <nav class="menu">
-                            <ul class="menu__list">
-                                <li class="menu__item menu__item--current"><a class="menu__link" href="#how-to-help">Как помочь</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#our-animals">Подопечные животные</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-                                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-                                <!-- <li class="menu__item icon"><a class="menu__link" href="https://vk.com/animalsgrodno"> <i class='fab fa-vk' style='font-size:27px;color:white'></i></a></li> -->
-                                <!-- <li class="menu__item icon"><a class="menu__link" href="https://www.instagram.com/animalsgrodno/"> <i class='fab fa-instagram' style='font-size:27px;color:white'></i> </a></li> -->
-                                <div class="menu__social">
-                                    <div class="menu__inner">
-                                        <a class="menu__link" href="https://vk.com/animalsgrodno"> <i class='fab fa-vk' style='font-size:27px;color: white'></i></a>
-                                    </div>
-                                    <div class="menu__inner">
-                                        <a class="menu__link" href="https://www.instagram.com/animalsgrodno/"> <i class='fab fa-instagram' style='font-size:27px;color: white'></i> </a>
-                                    </div>
-                                </div>
-                            </ul>
-                        </nav>
+    <!-- <div class="wrapper"> -->
+
+        <header class="header">
+            <div class="container">
+                <nav class="menu">
+                    <div class="menu__items">   
+                        <a class="menu__link menu__link--active" href="#how-to-help">Как помочь</a>
+                        <a class="menu__link" href="#our-animals">Подопечные животные</a>
                     </div>
-                </header>
+                    <div class="menu__items">
+                        <a class="menu__link" href="#">О нас</a>
+                        <a class="menu__link" href="#">Контакты</a>
+                    </div>
+                    <div class="menu__items social-btns">
+                        <a class="social-btns__item" href="https://vk.com/animalsgrodno">
+                            <i class='fab fa-vk' style='font-size:27px;color: white'></i>
+                        </a>
+                        <a class="social-btns__item" href="https://www.instagram.com/animalsgrodno/">
+                            <i class='fab fa-instagram' style='font-size:27px;color: white'></i>
+                        </a>
+                    </div>    
+                </nav>
+            </div>
 
-                <main class="main">
+            <section class="banner">    
+                <div class="container">
+                    <div class="save-life">
+                        <h1 class="save-life__title">СПАСИ ЖИЗНЬ</h1>
+                        <p class="save-life__text save-life__text--color">Благотворительное общественное объединение
+                            защиты животных</p>
+                        <p class="save-life__text save-life__text--size">Наша цель: помощь бездомным животных. Мы
+                            поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.
+                        </p>
+                    </div>
+                    <p class="save-life__text save-life__text--pos">У животных, находящихся в пункте отлова и
+                        временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                    <div class="button">
+                        <a href="#how-to-help" class="btn save-life__btn">Хочу помочь</a>
+                    </div>
 
-                    <div class="banner">
-                        <div class="container">
-                        <div class="save-life__header">
-                            <div class="save-life__title">СПАСИ ЖИЗНЬ</div>
-                            <div class="save-life__text save-life__text--color">Благотворительное общественное объединение защиты животных</div>
-                            <div class="save-life__text save-life__text--size">Наша цель: помощь бездомным животных. Мы поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно. </div>
-                        </div>
-                        <div class="save-life__text save-life__text--pos">У животных, находящихся в пункте отлова и временного содержания бродячих животных, есть всего несколько дней до усыпления...</div>
-                        <div class="button">
-                            <a href="#how-to-help" class="btn save-life__btn">Хочу помочь</a>
-                        </div>
-                        
-                        <!-- <div class="hover"></div>
+                    <!-- <div class="hover"></div>
                         <div class="hover__text">Я буду</div>
                         <div class="hover__text--bottom">лучшим</div>
                         <div class="hover__text--right">другом</div> -->
-                        </div>
-                    </div>
-        
+                </div>
+            </section>
+        </header>
 
-                <div class="info">
-                    <div class="container">
-                        <div class="info__row">
-                            <div class="info__img rect-img">
-                                <!-- <div class="rect-img__item1"> -->
-                                    <img src="./img/dog&cat.jpg" alt="Милые песили">
-                                <!-- </div> -->
-                                <!-- <div class="rect-img__item2"> -->
-                                    <!-- <img src="./img/Rectangle_25.png" alt="rect25"> -->
-                                <!-- </div> -->
+        <main class="main">
+            <div class="info">
+                <div class="container">
+                    <div class="info__row">
+                        <div class="info__img rect-img">
+                            <!-- <div class="rect-img__item1"> -->
+                            <img src="./img/dog&cat.jpg" alt="Милые песили">
+                            <!-- </div> -->
+                            <!-- <div class="rect-img__item2"> -->
+                            <!-- <img src="./img/Rectangle_25.png" alt="rect25"> -->
+                            <!-- </div> -->
+                        </div>
+                        <div class="info__text-block">
+                            <div class="info__title title">Тут большие добрые сердца помогают жить маленьким сердечкам
                             </div>
-                            <div class="info__text-block">
-                                <div class="info__title title">Тут большие добрые сердца помогают жить маленьким сердечкам</div>
-                                <div class="info__text text">Ежедневно в пункт временного содержания, путём отлова, попадают безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как потерявшегося, так и нового верного друга! </div>
-                                <div class="info__text text">Если нет возможности забрать хвостика, вы можете помочь нам финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди - волонтеры, без вас очень трудно!</div>
-                            </div>
+                            <div class="info__text text">Ежедневно в пункт временного содержания, путём отлова, попадают
+                                безнадзорные собаки и коты. По закону, у животных находящихся в САХе есть всего лишь
+                                несколько дней, чтобы найти прежнего или обрести нового хозяина. В противном случае
+                                невостребованных животных ждёт УСЫПЛЕНИЕ! Здесь вы сможете найти своего как
+                                потерявшегося, так и нового верного друга! </div>
+                            <div class="info__text text">Если нет возможности забрать хвостика, вы можете помочь нам
+                                финансово или другой материальной помощью. Еще нам всегда нужны добрые и отзывчивые люди
+                                - волонтеры, без вас очень трудно!</div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <section class="help">
-                    <div class="container">
+            <section class="help">
+                <div class="container">
 
                     <div id="how-to-help" class="help__title-main title title-light">Как помочь?</div>
 
@@ -89,7 +97,7 @@
 
                         <div class="item-help">
                             <div class="item-help__img img-item">
-                            <a href="#animal-home"><img src="./img/btn_home.svg" alt="dog"></a> 
+                                <a href="#animal-home"><img src="./img/btn_home.svg" alt="dog"></a>
                             </div>
                             <div class="item-help__text text">
                                 Дать хвостику дом или взять на передержку
@@ -99,7 +107,7 @@
                         <div class="item-help">
                             <div class="item-help__img img-item">
                                 <a href="#finance-help"><img src="./img/btn_money.svg" alt="dog"></a>
-                                
+
                             </div>
                             <div class="item-help__text text">
                                 Перечислить деньги в фонд помощи
@@ -108,7 +116,7 @@
                         <div class="item-help">
                             <div class="item-help__img img-item">
                                 <a href="#helph"><img src="./img/btn_eat.svg" alt="dog"></a>
-                                
+
                             </div>
                             <div class="item-help__text text">
                                 Привезти корм, лекарства или другие вещи
@@ -117,7 +125,7 @@
                         <div class="item-help">
                             <div class="item-help__img img-item">
                                 <a href="#"><img src="./img/btn_autohelp.svg" alt="dog"></a>
-                                
+
                             </div>
                             <div class="item-help__text text">
                                 Доставить животным еду или отвезти в больницу
@@ -126,7 +134,7 @@
                         <div class="item-help">
                             <div class="item-help__img img-item">
                                 <a href="#"><img src="./img/btn_volanter.svg" alt="dog"></a>
-                                
+
                             </div>
                             <div class="item-help__text text">
                                 Выгуливать, кормить, мыть или лечить хвостиков
@@ -135,7 +143,7 @@
                     </div>
 
                     <div id="animal-home" class="help__info-img img-item">
-                        <img class="bg" src="./img/btn_home-big.svg" alt="dog"> 
+                        <img class="bg" src="./img/btn_home-big.svg" alt="dog">
                     </div>
                     <div class="help__home">
                         <div class="help__info">
@@ -143,10 +151,11 @@
                                 Дом и любовь для хвостика
                             </div>
                             <div class="help__text text">
-                            Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с поиском
-                            дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших
-                            хвостиках,
-                            возможно кому-то нужен будет именно такой друг.
+                                Самая большая помощь - это спасти жизнь животному, забрать домой, или помочь хвостику с
+                                поиском
+                                дома. У наших подопечных очень мало времени. Рассказывайте друзья и и знакомым о наших
+                                хвостиках,
+                                возможно кому-то нужен будет именно такой друг.
                             </div>
                         </div>
                         <div class="help__info">
@@ -154,267 +163,282 @@
                                 Передержка
                             </div>
                             <div class="help__text text">
-                            Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или старые
-                            хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой животных на
-                            время.
-                            Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.
+                                Когда животных ждет скорое усыпление, очень важно найти ему дом. Но пока дом и новые или
+                                старые
+                                хозяева разыскиваются, хвостику нужно где-то жить. Вы можете забрать к себе домой
+                                животных на
+                                время.
+                                Волонтеры, в свою очередь, обязательно помогут с поиском нового дома.
                             </div>
                         </div>
                     </div>
                 </div>
-                </section>
+            </section>
 
-                <section class="animals">
-                    <div class="container">
-                        <div id="our-animals" class="animals__title title title-light">Наши подопечные</div>
-                        
-                        <div class="animals__gallery">
+            <section class="animals">
+                <div class="container">
+                    <div id="our-animals" class="animals__title title title-light">Наши подопечные</div>
 
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img class="animal-img--scale" src="./img/monik.jpg" alt="monik">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Моник
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Мальчик, 7 месяцев
-                                        </div>
-                                        <div class="animal__img-text">
-                                            К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
-                                    </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img src="./img/lunatik.jpg" alt="lunatik">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Лунатик
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Мальчик, 7 месяцев
-                                        </div>
-                                        <div class="animal__img-text">
-                                            Она не знает, что такое – царапаться и кусаться, она не знает, что такое нападать на других животных.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button  animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
-                                    </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="animals__gallery">
 
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img src="./img/gerda.jpg" alt="gerda">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Герда
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Мальчик, 7 месяцев
-                                        </div>
-                                        <div class="animal__img-text">
-                                            К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые руки и под паспорт.
-                                        </div>
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img class="animal-img--scale" src="./img/monik.jpg" alt="monik">
                                     </div>
-                                </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button  animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
+                                    <div class="animal__img-name">
+                                        Моник
                                     </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                    <div class="animal__img-disc">
+                                        Мальчик, 7 месяцев
+                                    </div>
+                                    <div class="animal__img-text">
+                                        К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными
+                                        не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые
+                                        руки и под паспорт.
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img src="./img/saki.jpg" alt="saki">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Саки
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Мальчик, 7 месяцев
-                                        </div>
-                                        <div class="animal__img-text">
-                                            Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.
-                                        </div>
-                                    </div>
+                            <div class="animals__btns">
+                                <div class="animal-button animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
                                 </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button  animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
-                                    </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img src="./img/monika.jpg" alt="monikа">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Моника
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Девочка, 4 месяца
-                                        </div>
-                                        <div class="animal__img-text">
-                                            Девочке 4 месяца жила в ужасных условиях, бывшая хозяйка могла исчезнуть на двое суток закрыв её одну в комнате без еды, ей нельзя там больше оставаться. Мила очень ласковая, забавная, в еде не привередлива.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button  animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
-                                    </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="animals__img-wrapper">
-                                <div class="animals__item">
-                                    <div class="animals__inner">
-                                        <div class="animal-img">
-                                            <img src="./img/andri.jpg" alt="monik">
-                                        </div>
-                                        <div class="animal__img-name">
-                                            Андреантино
-                                        </div>
-                                        <div class="animal__img-disc">
-                                            Мальчик, 7 месяцев
-                                        </div>
-                                        <div class="animal__img-text">
-                                            Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="animals__btns">
-                                    <div class="animal-button  animals__btns--indent">
-                                        <a href="#" class="btn animals__btn">Забрать домой</a>
-                                    </div>
-                                    <div class="animal-button">
-                                        <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-
-                        <div class="animals__info"> <a href="#">Посмотреть всех (157)</a></div>
-                        <div class="animlas__more-info">
-                            <div class="more-info__text">
-                                Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях. Переходите на наши странички.
-                            </div>
-                            <div class="more-info__social">
-                                <div class="more-info__inner">
-                                <a class="more-info__link" href="https://vk.com/animalsgrodno"> <i class='fab fa-vk' style='font-size:27px;color: #FBC832'></i></a>
-                                </div>
-                                <div class="more-info__inner">
-                                <a class="more-info__link" href="https://www.instagram.com/animalsgrodno/"> <i class='fab fa-instagram' style='font-size:27px;color: #FBC832'></i> </a>
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
                                 </div>
                             </div>
                         </div>
-                    </div>  
 
-                </section>
-
-                <section class="financial-help">
-
-                    <div class="container">
-                        <div id="finance-help" class="help__info-img img-item">
-                            <img src="./img/btn_money-big.svg" alt="dog">
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img src="./img/lunatik.jpg" alt="lunatik">
+                                    </div>
+                                    <div class="animal__img-name">
+                                        Лунатик
+                                    </div>
+                                    <div class="animal__img-disc">
+                                        Мальчик, 7 месяцев
+                                    </div>
+                                    <div class="animal__img-text">
+                                        Она не знает, что такое – царапаться и кусаться, она не знает, что такое
+                                        нападать на других животных.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animals__btns">
+                                <div class="animal-button  animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
+                                </div>
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="financial-help__outer">
-                            <div class="financial-help__title title">
-                                Финансовая поддержка
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img src="./img/gerda.jpg" alt="gerda">
+                                    </div>
+                                    <div class="animal__img-name">
+                                        Герда
+                                    </div>
+                                    <div class="animal__img-disc">
+                                        Мальчик, 7 месяцев
+                                    </div>
+                                    <div class="animal__img-text">
+                                        К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными
+                                        не конфликтует. Привит. Очень плачет и хочет на ручки. Отдается только в добрые
+                                        руки и под паспорт.
+                                    </div>
+                                </div>
                             </div>
-                            <div class="financial-help__text">
-                                Такая помощь необходима для оплаты стерилизации, прививок, лечения больных животных, покупка корма и других жизненно необходимых вещей.
+                            <div class="animals__btns">
+                                <div class="animal-button  animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
+                                </div>
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="financial-donate">
-                            <div class="financial-donate__bill">
-                                <div class="bill-count finance-title">
-                                    Расчетный счет в Банке
-                                </div>
-                                <div class="bill-data">
-                                    <p> БООЗЖ "СПАСИ ЖИЗНЬ"</p>
-                                    <p>УНП: 590375680</p>  
-                                    <p> <strong>Текущий (расчетный) счет в BYN: </strong> </p> 
-                                    <p> BY13ALFA30152555460010270000 </p>  
-                                    <p>ЗАО 'Альфа-Банк'</p>   
-                                    <p>БИК: ALFABY2X</p>  
-                                </div>
-                                <div class="finance__button">
-                                    <a href="#how-to-help" class="btn save-life__btn">Быстрый платеж</a>
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img src="./img/saki.jpg" alt="saki">
+                                    </div>
+                                    <div class="animal__img-name">
+                                        Саки
+                                    </div>
+                                    <div class="animal__img-disc">
+                                        Мальчик, 7 месяцев
+                                    </div>
+                                    <div class="animal__img-text">
+                                        Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая
+                                        густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="financial-donate__donation">
-                                <div class="donat-title finance-title">
-                                    Коробочки в городе
+                            <div class="animals__btns">
+                                <div class="animal-button  animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
                                 </div>
-                                <div class="donat-info">    
-                                <p>Наши коробочки для пожертвований в г. Гродно:</p> 
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img src="./img/monika.jpg" alt="monikа">
+                                    </div>
+                                    <div class="animal__img-name">
+                                        Моника
+                                    </div>
+                                    <div class="animal__img-disc">
+                                        Девочка, 4 месяца
+                                    </div>
+                                    <div class="animal__img-text">
+                                        Девочке 4 месяца жила в ужасных условиях, бывшая хозяйка могла исчезнуть на двое
+                                        суток закрыв её одну в комнате без еды, ей нельзя там больше оставаться. Мила
+                                        очень ласковая, забавная, в еде не привередлива.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animals__btns">
+                                <div class="animal-button  animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
+                                </div>
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="animals__img-wrapper">
+                            <div class="animals__item">
+                                <div class="animals__inner">
+                                    <div class="animal-img">
+                                        <img src="./img/andri.jpg" alt="monik">
+                                    </div>
+                                    <div class="animal__img-name">
+                                        Андреантино
+                                    </div>
+                                    <div class="animal__img-disc">
+                                        Мальчик, 7 месяцев
+                                    </div>
+                                    <div class="animal__img-text">
+                                        Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая
+                                        густая шерсть в полосочку, «серьезные» желтые глаза и длиннющие белые усы.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="animals__btns">
+                                <div class="animal-button  animals__btns--indent">
+                                    <a href="#" class="btn animals__btn">Забрать домой</a>
+                                </div>
+                                <div class="animal-button">
+                                    <a href="#" class="btn btn--style animals__btn">Забрать на передержку</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="animals__info"> <a href="#">Посмотреть всех (157)</a></div>
+                    <div class="animlas__more-info">
+                        <div class="more-info__text">
+                            Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях.
+                            Переходите на наши странички.
+                        </div>
+                        <div class="more-info__social">
+                            <div class="more-info__inner">
+                                <a class="more-info__link" href="https://vk.com/animalsgrodno"> <i class='fab fa-vk'
+                                        style='font-size:27px;color: #FBC832'></i></a>
+                            </div>
+                            <div class="more-info__inner">
+                                <a class="more-info__link" href="https://www.instagram.com/animalsgrodno/"> <i
+                                        class='fab fa-instagram' style='font-size:27px;color: #FBC832'></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="financial-help">
+
+                <div class="container">
+                    <div id="finance-help" class="help__info-img img-item">
+                        <img src="./img/btn_money-big.svg" alt="dog">
+                    </div>
+
+                    <div class="financial-help__outer">
+                        <div class="financial-help__title title">
+                            Финансовая поддержка
+                        </div>
+                        <div class="financial-help__text">
+                            Такая помощь необходима для оплаты стерилизации, прививок, лечения больных животных, покупка
+                            корма и других жизненно необходимых вещей.
+                        </div>
+                    </div>
+
+                    <div class="financial-donate">
+                        <div class="financial-donate__bill">
+                            <div class="bill-count finance-title">
+                                Расчетный счет в Банке
+                            </div>
+                            <div class="bill-data">
+                                <p> БООЗЖ "СПАСИ ЖИЗНЬ"</p>
+                                <p>УНП: 590375680</p>
+                                <p> <strong>Текущий (расчетный) счет в BYN: </strong> </p>
+                                <p> BY13ALFA30152555460010270000 </p>
+                                <p>ЗАО 'Альфа-Банк'</p>
+                                <p>БИК: ALFABY2X</p>
+                            </div>
+                            <div class="finance__button">
+                                <a href="#how-to-help" class="btn save-life__btn">Быстрый платеж</a>
+                            </div>
+                        </div>
+                        <div class="financial-donate__donation">
+                            <div class="donat-title finance-title">
+                                Коробочки в городе
+                            </div>
+                            <div class="donat-info">
+                                <p>Наши коробочки для пожертвований в г. Гродно:</p>
                                 <ol class="donat-info__list">
                                     <li>Зоомаркет «Зообазар», ул. Комарова, 26а;</li>
-                                    <li>Учебный корпус ГГАУ,  ул. Волковича, 1;</li>
+                                    <li>Учебный корпус ГГАУ, ул. Волковича, 1;</li>
                                     <li>Парикмахерская «ПРИМАДОННА», ул. Гоголя, 11;</li>
                                     <li>Зоомаркет «Зообазар» ул. Пушкина, 31а;</li>
                                     <li>Гипермаркет «Евроопт», ул. Тимирязева, 8;</li>
                                     <li>Гипермаркет «Евроопт», ул. Янки Купалы, 82А;</li>
                                     <li>Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</li>
                                 </ol>
-                                </div>
                             </div>
                         </div>
-
                     </div>
 
-                </section>
+                </div>
 
-                <section class="helph">
-                    <div class="container">
-                        <div id="helph" class="help__info-img helph__pos">
-                            <img src="./img/btn_eat-big.svg" alt="dog">
-                        </div>
+            </section>
 
-                        <div class="help-container">
+            <section class="helph">
+                <div class="container">
+                    <div id="helph" class="help__info-img helph__pos">
+                        <img src="./img/btn_eat-big.svg" alt="dog">
+                    </div>
+
+                    <div class="help-container">
                         <div class="helph__info helph-container-top">
                             <div class="helph__title">
                                 Корма
@@ -422,11 +446,13 @@
                             <div class="helph__text">
                                 Можно помочь с покупкой и доставкой еды для хвостатых:
                                 <ul helph-list>
-                                    <li>Быстроразваривающиеся <strong>крупы:</strong>  дроблёная гречка, овсянка, сечка, овсяные/гречневые хлопья, не требующие варки;</li> 
-                                    <li> <strong>Сухие и влажные корма</strong>  для собак и котов (кроме Рекс и Petboom),</li>
+                                    <li>Быстроразваривающиеся <strong>крупы:</strong> дроблёная гречка, овсянка, сечка,
+                                        овсяные/гречневые хлопья, не требующие варки;</li>
+                                    <li> <strong>Сухие и влажные корма</strong> для собак и котов (кроме Рекс и
+                                        Petboom),</li>
                                     <li> <strong>Фарш для собак</strong> , "БОБИКИ" и др.</li>
                                 </ul>
-                                <p class="helph__text--color">Вы можете помочь в приготовлении каш и их доставке!</p>  
+                                <p class="helph__text--color">Вы можете помочь в приготовлении каш и их доставке!</p>
                             </div>
                         </div>
 
@@ -435,7 +461,9 @@
                                 Лекарства
                             </div>
                             <div class="helph__text">
-                                Нам необходимы препараты: цефтриаксон (флакон по 0,5 г); новокаин (раствор для инъекций); гискан; гамавит; катозал; антитокс фоспренил; энтеросгель (паста); препараты от глистов, блох, клещей, для заживления ран.
+                                Нам необходимы препараты: цефтриаксон (флакон по 0,5 г); новокаин (раствор для
+                                инъекций); гискан; гамавит; катозал; антитокс фоспренил; энтеросгель (паста); препараты
+                                от глистов, блох, клещей, для заживления ран.
                             </div>
                         </div>
 
@@ -448,7 +476,8 @@
                                 <ul class="helph-list">
                                     <li>Ошейники, поводки, намордники;</li>
                                     <li>Опилки и солома в любом количестве;</li>
-                                    <li>Посуда для животных и для приготовления еды - миски, кастрюли, ножи, черпаки и др.);</li>
+                                    <li>Посуда для животных и для приготовления еды - миски, кастрюли, ножи, черпаки и
+                                        др.);</li>
                                     <li>Теплые вещи, лежаки для утепления и уюта животных;</li>
                                     <li>Будки.</li>
                                 </ul>
@@ -456,65 +485,68 @@
                         </div>
                         <div class="helph__info-link"> <a href="#">Кому и куда передать?</a></div>
                     </div>
-                    </div>
-                </section>
+                </div>
+            </section>
 
-                <section class="auto-help">
-                    <div class="container">
-                        <div id="helph" class="help__info-img auto-help__pos">
-                            <img src="./img/btn_autohelp-big.svg" alt="dog">
-                        </div>
-
-                        <div class="auto-help-container">
-                            <div class="auto-help__info">
-                                <div class="auto__title">
-                                    Автопомощь
-                                </div>
-                                <div class="auto__text">
-                                    Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль, немного свободного времени и доброе сердце - будем вам рады.
-                                </div>
-                            </div>
-                            <div class="auto-help__button">
-                                <a href="#how-to-help" class="btn save-life__btn">Оставить заявку</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="volunteering">
-                    <div class="container">
-                        <div id="helph" class="help__info-img auto-help__pos">
-                            <img src="./img/btn_volanter-big.svg" alt="dog">
-                        </div>
+            <section class="auto-help">
+                <div class="container">
+                    <div id="helph" class="help__info-img auto-help__pos">
+                        <img src="./img/btn_autohelp-big.svg" alt="dog">
                     </div>
 
-                    <div class="volun-inner">
-                        <div class="volun-image">
-                            <img src="./img/volunt.jpg" alt="volunt">
+                    <div class="auto-help-container">
+                        <div class="auto-help__info">
+                            <div class="auto__title">
+                                Автопомощь
+                            </div>
+                            <div class="auto__text">
+                                Важной помощью будет транспортировка. Необходимо отвозить животных в ветеринарную
+                                клинику в сопровождении нашего волонтера или привозить еду. Если у вас есть автомобиль,
+                                немного свободного времени и доброе сердце - будем вам рады.
+                            </div>
                         </div>
-                        <div class="volun-container">
-                            <div class="volun__info">
-                                <div class="volun__title">
-                                    Волонтерство
-                                </div>
-                                <div class="volun__text">
-                                    Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы располагаете несколькими часами свободного времени, проведите его с пользой! Главное условие - это Ваше совершеннолетие и любовь к животным!
-                                    Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.
-                                </div>
-                            </div>
-                            <div class="volun__button">
-                                <a href="#how-to-help" class="btn save-life__btn">Оставить заявку</a>
-                            </div>
+                        <div class="auto-help__button">
+                            <a href="#how-to-help" class="btn save-life__btn">Оставить заявку</a>
                         </div>
                     </div>
+                </div>
+            </section>
 
-                </section>
+            <section class="volunteering">
+                <div class="container">
+                    <div id="helph" class="help__info-img auto-help__pos">
+                        <img src="./img/btn_volanter-big.svg" alt="dog">
+                    </div>
+                </div>
 
-                </main>
+                <div class="volun-inner">
+                    <div class="volun-image">
+                        <img src="./img/volunt.jpg" alt="volunt">
+                    </div>
+                    <div class="volun-container">
+                        <div class="volun__info">
+                            <h3 class="volun__title">Волонтерство</h3>    
+                            <p class="volun__text">
+                                Катастрофически не хватает добрых людей, которые готовы поделиться своим временем и
+                                окружить заботой животных. Много опыта не нужно, все расскажем и поможем! Если Вы
+                                располагаете несколькими часами свободного времени, проведите его с пользой! Главное
+                                условие - это Ваше совершеннолетие и любовь к животным!
+                                Часто животным не хватает обычных прогулок и игры, они сидят в клетках и грустят.
+                            </p>
+                        </div>
+                        <div class="volun__button">
+                            <a href="#how-to-help" class="btn save-life__btn">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
 
-                    
-        </div>
+            </section>
 
-    </body>
+        </main>
 
-    </html>
+
+    <!-- </div> -->
+
+</body>
+
+</html>

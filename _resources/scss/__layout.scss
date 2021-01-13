@@ -1,48 +1,50 @@
 /* HEADER */
 
-.header {
-    height: 164px;
-}
+// .header {
+//     height: 164px;
+// }
 
 .menu {
-    &__list {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 110px;
+    align-items: center;
+ 
+    &__items:nth-child(1) {
+        grid-column: 1 / span 3;
     }
-    &__item {
-        margin: 54px 32px 91px 0; 
+
+    &__items:nth-child(2) {
+        grid-column: 5 / span 3;
     }
-    &__item:nth-child(2) {
-        margin-right: 194px;
+
+    &__items:nth-child(3) {
+        grid-column: 9 / span 2;
     }
-    &__item:nth-child(4) {
-        margin-right: 289px;
-    }
+  
     &__link {
         text-decoration: none;
         color: $color-main;
-    }
-    &__social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -30px;
+        margin-right: 30px;
     }
 }
 
-.menu__inner {
-    display: block;
-    width: 49px;
-    height: 49px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+.social-btns {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 28px;
-}
 
+    &__item {
+        display: block;
+        width: 49px;
+        height: 49px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 28px;
+        text-decoration: none;
+    }
+}
 .more-info__inner:last-child {
     margin-right: 0;
 }
@@ -50,37 +52,36 @@
 
 /* SAFE LIFE */
 
-.banner {
-    // height: 670px;
-}
-
 .save-life {
-    background: #E5E5E5;
-    &__header {
-        width: 659px;
-    }
+    width: 659px;
+
     &__title {
-        font-weight: bold;
-        font-size: 72px;
+        font-weight: 700;
+        font-size: $font-size--h1;
         line-height: 87px;
         color: #242424;
     }
+
     &__text--color {
-        color: #6B6B6B;
+        color: $gray;
         font-weight: 300;
         margin-bottom: 10px;
+        line-height: 18.45px;
     }
+
     &__text--size {
         line-height: 140%;
         margin-bottom: 43px;
     }
+
     &__text--pos {
         width: 415px;
-        font-size: 24px;
+        font-size: 2.4rem;
         line-height: 29px;
         margin-bottom: 44px;
         color: $orange;
     } 
+
     &__btn {
         padding: 5px 33px 5px 32px;
         text-decoration: none;
@@ -594,4 +595,13 @@
 
 .volun-inner {
     display: flex;
+}
+
+.volun-image {
+    width: 100%;
+    height: auto;
+}
+
+.volun__info {
+    width: 466px;
 }
