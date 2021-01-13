@@ -206,7 +206,6 @@
 
 .item-help__img {
     margin-bottom: 24px;
-    
 }
 
 .item-help__text {
@@ -216,32 +215,7 @@
 }
 
 .help__info-img {
-    text-align: center;
-    // position: relative;
     margin-bottom: 68px;
-    overflow: hidden;
-}
-
-.help__info-img::after, 
-.help__info-img::before {
-    content: ''; 
-    position: relative;
-    height: 2px;
-    vertical-align: middle;
-    width: 50%;
-    display: inline-block;
-    background-color: #EEBF3A;
-    
-}
-
-.help__info-img::before {
-    top: -70px;
-    margin-left: -50%;
-}
-
-.help__info-img::after {
-    top: -70px;
-    margin-right: -50%;
 }
 
 .help__home {
@@ -380,7 +354,6 @@
     color: #AD7F00;
 }
 
-
 .animals__info a:hover {
     text-decoration: none;
 }
@@ -433,6 +406,35 @@
     border: 2px solid $color-main;
 }
 
+/* CONTENT NAV_IMG  */
+
+.img-nav {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-nav::after, 
+.img-nav::before {
+    content: ''; 
+    position: relative;
+    height: 2px;
+    vertical-align: middle;
+    width: 50%;
+    display: inline-block;
+    background-color: #EEBF3A;
+    
+}
+
+.img-nav::before {
+    top: -70px;
+    margin-left: -50%;
+}
+
+.img-nav::after {
+    top: -70px;
+    margin-right: -50%;
+}
 
 /* FINANCIAL HELP */
 
@@ -444,6 +446,10 @@
     padding-top: 46px;
     height: 681px;
     background-color: $white-bg;
+}
+
+.finance__info-img {
+    margin-bottom: 58px;
 }
 
 .financial-help__outer {
@@ -520,6 +526,12 @@
     margin-bottom: 0;
 }
 
+/* HELPH */
+
+.helph__info-img {
+    margin-bottom: 53px;
+}
+
 .help-container {
     display: flex;
     flex-direction: column;
@@ -572,8 +584,11 @@
     margin-bottom: 82px;
 }
 
+.auto-help__info-img {
+    margin-bottom: 45px;
+}
+
 .auto-help__info {
-    
     width: 680px;
 }
 
@@ -593,15 +608,47 @@
 
 /* VOLUNTEERING */
 
+.valunteering__info-img {
+
+}
+
+.volunteering__pos {
+    margin-bottom: 50px;    
+}
+
 .volun-inner {
     display: flex;
+    justify-content: center;
 }
 
 .volun-image {
-    width: 100%;
+    // width: ;
     height: auto;
+    margin-right: 77px;
 }
 
 .volun__info {
     width: 466px;
+}
+
+.volun-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+/* NEWS */
+
+.news__title {
+    text-align: center;
+}
+
+.news-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-content__text {
+    width: 603px;
 }
