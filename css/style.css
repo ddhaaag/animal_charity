@@ -13,11 +13,15 @@
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy Regular"), local("Gilroy-Regular"), url("/fonts/Gilroy-Regular/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy-Regular/Gilroy-Regular.woff") format("woff"), url("/fonts/Gilroy-Regular/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 /* Gilroy Bold */
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy Bold"), local("Gilroy-Bold"), url("/fonts/Gilroy-Bold/Gilroy-Bold.woff2") format("woff2"), url("/fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"), url("/fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
@@ -45,6 +49,7 @@
   margin-right: 30px;
 }
 
+/* SOCIAL BUTTONS */
 .social-btns {
   display: flex;
 }
@@ -621,6 +626,14 @@
 }
 
 /* NEWS */
+.news-header {
+  margin-bottom: 53px;
+}
+
+.news-header__position {
+  margin-bottom: 40px;
+}
+
 .news__title {
   text-align: center;
 }
@@ -633,6 +646,54 @@
 
 .news-content__text {
   width: 603px;
+  margin-left: 35px;
+}
+
+.news-content:last-child {
+  margin-top: 24px;
+}
+
+/* ABOUT */
+.about {
+  padding-top: 56px;
+  margin-bottom: 54px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+  margin: 0 auto;
+}
+
+.about-us {
+  margin-bottom: 24px;
+}
+
+.about-us__title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.about-contacts,
+.about-contacts__title,
+.about-us {
+  margin-bottom: 40px;
+}
+
+.about-contacts__title {
+  margin-bottom: 24px;
+}
+
+.about-social__title {
+  margin-bottom: 16px;
+}
+
+/* THANKS FOR HELP */
+.thanks {
+  width: 100%;
+  height: 741px;
+  background-image: url(/img/footer_img.png);
 }
 
 * {
@@ -678,19 +739,26 @@ img {
 .header {
   width: 100%;
   height: 834px;
-  background-image: url(/img/dog-1.png);
-  background-repeat: no-repeat;
-  background-position: top 0 right 20%;
+  position: relative;
 }
 
-.header::before {
+.header__container {
+  max-width: 1150px;
+  height: 713px;
+  background-image: url(/img/dog-1.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  position: relative;
+}
+
+.header__container::before {
   content: "";
   background-image: url(/img/cat-1.png);
   width: 483px;
   height: 469px;
   display: block;
   position: absolute;
-  top: 7%;
-  right: 21.5%;
+  top: 65.5%;
+  right: 14.5%;
   z-index: 100;
 }

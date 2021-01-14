@@ -33,7 +33,7 @@ $font-size--large: 1.8rem;
 
 
 /* Font Family */
-$font-family:   Gilroy, Arial, sans-serif;
+$font-family: Gilroy, Arial, sans-serif;
 
 /* Gilroy Regular */
 @font-face {
@@ -42,6 +42,8 @@ $font-family:   Gilroy, Arial, sans-serif;
         url('/fonts/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'),
         url('/fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'),
         url('/fonts/Gilroy-Regular/Gilroy-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
 }
 
 /* Gilroy Bold */
@@ -51,7 +53,10 @@ $font-family:   Gilroy, Arial, sans-serif;
         url('/fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'),
         url('/fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'),
         url('/fonts/Gilroy-Bold/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
+
 
 @font-face {
     font-family: 'Gilroy';

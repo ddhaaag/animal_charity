@@ -29,6 +29,8 @@
     }
 }
 
+/* SOCIAL BUTTONS */
+
 .social-btns {
     display: flex;
 
@@ -36,18 +38,23 @@
         display: block;
         width: 49px;
         height: 49px;
+
         border: 2px solid #fff;
+
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+
         margin-right: 28px;
+
         text-decoration: none;
     }
 }
 .more-info__inner:last-child {
     margin-right: 0;
 }
+
 /* MAIN */
 
 /* SAFE LIFE */
@@ -639,6 +646,14 @@
 
 /* NEWS */
 
+.news-header {
+    margin-bottom: 53px;
+}
+
+.news-header__position {
+    margin-bottom: 40px;
+}
+
 .news__title {
     text-align: center;
 }
@@ -651,4 +666,55 @@
 
 .news-content__text {
     width: 603px;
+    margin-left: 35px;
+}
+
+.news-content:last-child {
+    margin-top: 24px;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding-top: 56px;
+    margin-bottom: 54px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.about-us {
+    margin-bottom: 24px;
+}
+
+.about-us__title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.about-contacts,
+.about-contacts__title,
+.about-us {
+    margin-bottom: 40px;
+}
+
+.about-contacts__title {
+    margin-bottom: 24px;
+}
+
+.about-social__title {
+    margin-bottom: 16px;
+}
+
+/* THANKS FOR HELP */
+
+.thanks {
+    width: 100%;
+    height: 741px;
+    background-image: url(/img/footer_img.png);
 }
