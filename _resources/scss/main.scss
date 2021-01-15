@@ -2,9 +2,16 @@
 @import './_layout';
 @import './_components';
 
-* {
-    box-sizing: border-box;
-    margin: 0;
+// * {
+//     box-sizing: border-box;
+    
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
     padding: 0;
 }
 
@@ -59,7 +66,7 @@ img {
 .header__container {
     max-width: 1150px;
     height: 713px;
-    background-image: url(/img/dog-1.png);
+    background-image: url(/img/dog-1.jpg);
     background-repeat: no-repeat;
     background-position: top 0 right 0;
     position: relative;
