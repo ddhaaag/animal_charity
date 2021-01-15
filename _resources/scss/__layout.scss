@@ -216,38 +216,20 @@
     margin: 0;
 }
 
-.item-help__img::after {
-    content: '';
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 2px solid #FFC41E;
-    display: block;
-    top: -30px;
-    left: 10px;
-    position: absolute;
-}
-
-.item-help__img {
-    margin-bottom: 24px;
-}
-
-
 .img-circle {
     border: 2px solid #FFC41E;
     border-radius: 50%;
     width: 150px;
-    padding: 30px 30px;
+    padding: 31px 31px;
     height: 150px;
     // background: url('/img/btn_home.svg') no-repeat;
     // background-position: center;
-    // margin: 0 auto
+    // margin: 0 auto;
+    margin-bottom: 24px;
 }
 .img-circle:hover {
     background-color: #fff;
 }
-
-
 
 .item-help__text {
     margin-bottom: 71px;
