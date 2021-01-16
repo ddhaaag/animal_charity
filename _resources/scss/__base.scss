@@ -33,9 +33,26 @@ $font-size--large: 1.8rem;
 
 
 /* Font Family */
-$font-family: Gilroy, Arial, sans-serif;
+$font-family: 'Gilroy', Arial, sans-serif;
+// $font-light: 'Gilroy Light', Arial, sans-serif;
+// $font-medium: 'Gilroy-Medium', Arial, sans-serif;
+// $font-simibold: 'Gilroy-Semibold', Arial, sans-serif;
+// $font-bold: 'Gilroy-Bold', Arial, sans-serif;
 
-/* Gilroy Regular */
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('/fonts/Gilroy-Light/Gilroy-Light.woff2') format('woff2'),
+        url('/fonts/Gilroy-Light/Gilroy-Light.woff') format('woff'),
+        url('/fonts/Gilroy-Light/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Regular'), local('Gilroy-Regular'),
@@ -46,7 +63,26 @@ $font-family: Gilroy, Arial, sans-serif;
         font-style: normal;
 }
 
-/* Gilroy Bold */
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('/fonts/Gilroy-Medium/Gilroy-Medium.woff2') format('woff2'),
+        url('/fonts/Gilroy-Medium/Gilroy-Medium.woff') format('woff'),
+        url('/fonts/Gilroy-Medium/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('/fonts/Gilroy-Semibold/Gilroy-Semibold.woff2') format('woff2'),
+        url('/fonts/Gilroy-Semibold/Gilroy-Semibold.woff') format('woff'),
+        url('/fonts/Gilroy-Semibold/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
 @font-face {
     font-family: 'Gilroy';
     src: local('Gilroy Bold'), local('Gilroy-Bold'),
@@ -58,12 +94,6 @@ $font-family: Gilroy, Arial, sans-serif;
 }
 
 
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy Light'), local('Gilroy-Bold'),
-        url('/fonts/Gilrpy-Light/Gilroy-Light.woff') format('woff'),
-        url('/fonts/Gilrpy-Light/Gilroy-Light.ttf') format('truetype');
-}
 
 @mixin btn-style {
     background: #FBC832;
@@ -74,7 +104,8 @@ $font-family: Gilroy, Arial, sans-serif;
     color: $color-main;
     border: none;
     cursor: pointer;
-    padding: 5px 33px 5px 32px;
+    // padding: 5px 33px 5px 32px;
+    padding: 8px 39px 8px 39px;
     text-decoration: none;
 }
 

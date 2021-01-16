@@ -9,6 +9,9 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 110px;
     align-items: center;
+    margin-bottom: 38px;
+    font-family: $font-family;
+    font-weight: 600;
  
     &__items:nth-child(1) {
         grid-column: 1 / span 3;
@@ -25,7 +28,7 @@
     &__link {
         text-decoration: none;
         color: $color-main;
-        margin-right: 30px;
+        margin-right: 28px;
         transition: all 1s ease;
     }
 
@@ -83,14 +86,16 @@
 
     &__text--size {
         line-height: 140%;
-        margin-bottom: 43px;
+        margin-bottom: 45px;
+        font-weight: 600;
     }
 
     &__text--pos {
         width: 415px;
         font-size: 2.4rem;
+        font-weight: 600;
         line-height: 29px;
-        margin-bottom: 44px;
+        margin-bottom: 47px;
         color: $orange;
     } 
 
@@ -151,21 +156,32 @@
     z-index: 1;
     &__row {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+        padding-top: 64px;
     }
-    &__img + .info__text-block {
-        margin-left: 73px;
+    &__img {   
+        flex: 0 1 50.8%;
+        justify-self: start;
+        position: relative;
+        left: 3px;
+        top: 22px;
     }
+    
     &__text-block {
+        flex: 0 1 49.2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
         width: 100%;
-        margin-top: 128px;
         max-width: 466px;
     }
     &__title {
+        margin-top: 18px;
         margin-bottom: 28px;
         text-align: center;
         color: $orange;
+        font-weight: 600;
     }    
     &__text {
         margin-bottom: 20px;
@@ -193,8 +209,8 @@
 
 .help__title-main {
     text-align: center;
-    margin-bottom: 47px;
-    padding-top: 80px;
+    margin-bottom: 45px;
+    padding-top: 75px;
     font-weight: 300;
 }
 
@@ -248,8 +264,13 @@
 
 .help__info {
     width: 389px;
-    margin-left: 97px;
+    margin-left: 86px;
 }
+
+// .help__info + .help__info {
+//     // margin-top: 0;
+//     margin-left: 170px;
+// }
 
 .help__title {
     margin-bottom: 20px;
@@ -275,30 +296,33 @@
 }
 
 .animals__btns {
-    height: 139px;
+    // height: 139px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    margin-top: 18px;
+    margin-bottom: 20px;
 }
 
 .animals__title {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .animals__item {
-    height: 555px;
+    min-height: 695px;
     width: 368px;
     left: 0px;
     top: 0px;
     border-radius: 5px;
     border: 1px solid #D6D6D6;
     background-color: $white-bg;
+    margin-bottom: 44px;
 }
 
 .animals__btns:nth-child(2) {
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 }
 
 .animals__item:hover {
@@ -315,7 +339,7 @@
     font-weight: 500;
     line-height: 20px;
     text-align: center;
-    margin-top: 8px;
+    margin-top: 5px;
     // border-bottom: 1px solid #D6D6D6;
 }
 
@@ -361,7 +385,7 @@
 }
 
 .animals__btns--indent {
-    margin-bottom: 17px;
+    margin-bottom: 18px;
 }
 
 .btn--style {
@@ -667,7 +691,8 @@
 /* NEWS */
 
 .news-header {
-    margin-bottom: 53px;
+    // margin-bottom: 53px; 
+    background-color: $white-bg;
 }
 
 .news-header__position {
@@ -676,6 +701,7 @@
 
 .news__title {
     text-align: center;
+    padding-top: 54px;
 }
 
 .news-content {
@@ -691,6 +717,7 @@
 
 .news-content:last-child {
     margin-top: 24px;
+    padding-bottom: 53px;
 }
 
 
