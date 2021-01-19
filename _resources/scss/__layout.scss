@@ -1,57 +1,62 @@
 /* HEADER */
 
-.header__burger {
-    display: none;
-}
+// .header__burger {
+//     display: none;
+// }
 
-@media only screen and (max-width: 768px) {
-    .header__burger {
-		display: block;
-		position: relative;
-		width: 30px;
-		height: 20px;
-		position: relative;
-		z-index: 3;
-	}
-	.header__burger span{
-		position: absolute;
-		background-color: #000;
-		position: absolute;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		top: 9px;
-		transition: all 0.3s ease 0s;
-	}
-	.header__burger:before,
-	.header__burger:after{
-		content: '';
-		background-color: #000;
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		left: 0;
-		transition: all 0.3s ease 0s;
-	}
-	.header__burger:before{
-		top: 0;
-	}
-	.header__burger:after{
-		bottom: 0;
-    }
+// @media only screen and (max-width: 768px) {
+//     .header__burger {
+// 		display: block;
+// 		position: relative;
+// 		width: 30px;
+// 		height: 20px;
+// 		position: relative;
+// 		z-index: 3;
+// 	}
+// 	.header__burger span{
+// 		position: absolute;
+// 		background-color: #000;
+// 		position: absolute;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 2px;
+// 		top: 9px;
+// 		transition: all 0.3s ease 0s;
+// 	}
+// 	.header__burger:before,
+// 	.header__burger:after{
+// 		content: '';
+// 		background-color: #000;
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 2px;
+// 		left: 0;
+// 		transition: all 0.3s ease 0s;
+// 	}
+// 	.header__burger:before{
+// 		top: 0;
+// 	}
+// 	.header__burger:after{
+// 		bottom: 0;
+//     }
 
 
-}
+// }
 
 
 .menu {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 110px;
+    // display: grid;
+    // grid-template-columns: repeat(10, 1fr);
+    // grid-template-rows: 110px;
+    // align-items: center;
+    // margin-bottom: 38px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 38px;
+    padding-top: 36px;
     font-family: $font-family;
     font-weight: 600;
+    margin-bottom: 67px;
 
     @media only screen and (max-width: 1269px) {
         display: flex;
@@ -86,26 +91,42 @@
 
 /* SOCIAL BUTTONS */
 
-.social-btns {
-    display: flex;
-
-    &__item {
-        display: block;
-        width: 49px;
-        height: 49px;
-
-        border: 2px solid #fff;
-
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        margin-right: 28px;
-
-        text-decoration: none;
-    }
+.social-btns__item {
+    text-decoration: none;
 }
+
+.menu__items a {
+    margin-right: 28px;
+}
+
+.menu__items a:last-child {
+    margin-right: 0;
+}
+
+.social-btns__item svg:hover {
+    fill: #000;
+}
+
+// .social-btns {
+//     display: flex;
+
+//     &__item {
+//         display: block;
+//         width: 49px;
+//         height: 49px;
+
+//         border: 2px solid #fff;
+
+//         border-radius: 50%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+
+//         margin-right: 28px;
+
+//         text-decoration: none;
+//     }
+// }
 .more-info__inner:last-child {
     margin-right: 0;
 }
@@ -160,7 +181,7 @@
         font-size: 2.4rem;
         font-weight: 600;
         line-height: 29px;
-        margin-bottom: 47px;
+        margin-bottom: 44px;
         color: $orange;
 
         @media only screen and (max-width: 1269px) {
@@ -181,7 +202,7 @@
 }
 
 .button {
-    margin-bottom: 272px;
+    padding-bottom: 272px;
 }
 
 .hover__text {
@@ -257,8 +278,8 @@
         max-width: 466px;
     }
     &__title {
-        margin-top: 18px;
-        margin-bottom: 28px;
+        margin-top: 62px;
+        margin-bottom: 22px;
         text-align: center;
         color: $orange;
         font-weight: 600;
@@ -272,6 +293,31 @@
         margin-bottom: 20px;
     }
     
+}
+
+.info__img {
+    position: relative;
+}
+
+.info__img::before {
+    content: '';
+    position: absolute;
+    background: url(/img/dog&cat.png) left center no-repeat;
+    width: 630px;
+    height: 541px;
+    top: -32px;
+    right: 55px;
+    z-index: 2;
+}
+
+.info__img::after {
+    content: '';
+    position: absolute;
+    background: url(/img/rect.png) left center no-repeat;
+    width: 630px;
+    height: 541px;
+    top: -41px;
+    right: 54px;
 }
 
 /* HELP SECTION */

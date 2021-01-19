@@ -33,6 +33,7 @@ body {
     width: 100%;
     max-width: 1144px;
     margin: 0 auto;
+    // position: relative;
 
     @media only screen and (max-width: 1269px) {
         max-width: 804px;
@@ -75,7 +76,7 @@ img {
 
 .header {
     width: 100%;
-    min-height: 825px;
+    // min-height: 825px;   
     position: relative;
 
     @media only screen and (max-width: 1269px) {
@@ -84,13 +85,25 @@ img {
 }
 
 .header__container {
-    max-width: 1150px;
-    min-height: 713px;
-    background-image: url(/img/dog-1.jpg);
-    background-repeat: no-repeat;
-    background-position: top -10px right 2px;
     position: relative;
-    z-index: 10;
+}
+
+.header__container::after {
+    content: '';
+    // max-width: 1150px;
+    // min-height: 713px;
+    // background: url(/img/dog-1.jpg);
+    background: url(/img/dog-1.jpg) right top no-repeat;
+    position: absolute;
+    width: 718px;
+    height: 713px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    // background-repeat: no-repeat;
+    // background-position: top -10px right 2px;
+    // position: absolute;
+    // z-index: 10;
 
     @media only screen and (max-width: 1269px) {
         max-width: 804px;
@@ -106,7 +119,7 @@ img {
     min-height: 469px;
     display: block;
     position: absolute;
-    top: 64.5%;
+    top: 518%;
     right: 14.5%; 
     z-index: 100;
 
@@ -118,14 +131,14 @@ img {
     }
 }
 
-.header__container::after {
-    content: '';
-    background-image: url(/img/illbebest.png);
-    background-repeat: no-repeat;
-    left: -110px;
-    top: 366px;
-    position: absolute;
-    min-width: 772px;
-    min-height: 404px;  
-    z-index: -1;
-}
+// .header__container::after {
+//     content: '';
+//     background-image: url(/img/illbebest.png);
+//     background-repeat: no-repeat;
+//     left: -110px;
+//     top: 366px;
+//     position: absolute;
+//     min-width: 772px;
+//     min-height: 404px;  
+//     z-index: -1;
+// }

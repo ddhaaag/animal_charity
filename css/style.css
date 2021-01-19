@@ -40,58 +40,14 @@
   font-style: normal;
 }
 /* HEADER */
-.header__burger {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .header__burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .header__burger span {
-    position: absolute;
-    background-color: #000;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header__burger:before,
-.header__burger:after {
-    content: "";
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header__burger:before {
-    top: 0;
-  }
-
-  .header__burger:after {
-    bottom: 0;
-  }
-}
 .menu {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 110px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 38px;
+  padding-top: 36px;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 600;
+  margin-bottom: 67px;
 }
 @media only screen and (max-width: 1269px) {
   .menu {
@@ -121,20 +77,20 @@
 }
 
 /* SOCIAL BUTTONS */
-.social-btns {
-  display: flex;
-}
 .social-btns__item {
-  display: block;
-  width: 49px;
-  height: 49px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 28px;
   text-decoration: none;
+}
+
+.menu__items a {
+  margin-right: 28px;
+}
+
+.menu__items a:last-child {
+  margin-right: 0;
+}
+
+.social-btns__item svg:hover {
+  fill: #000;
 }
 
 .more-info__inner:last-child {
@@ -190,7 +146,7 @@
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 29px;
-  margin-bottom: 47px;
+  margin-bottom: 44px;
   color: #C78100;
 }
 @media only screen and (max-width: 1269px) {
@@ -219,7 +175,7 @@
 }
 
 .button {
-  margin-bottom: 272px;
+  padding-bottom: 272px;
 }
 
 .hover__text {
@@ -293,8 +249,8 @@
   max-width: 466px;
 }
 .info__title {
-  margin-top: 18px;
-  margin-bottom: 28px;
+  margin-top: 62px;
+  margin-bottom: 22px;
   text-align: center;
   color: #C78100;
   font-weight: 600;
@@ -306,6 +262,31 @@
 }
 .info__text {
   margin-bottom: 20px;
+}
+
+.info__img {
+  position: relative;
+}
+
+.info__img::before {
+  content: "";
+  position: absolute;
+  background: url(/img/dog&cat.png) left center no-repeat;
+  width: 630px;
+  height: 541px;
+  top: -32px;
+  right: 55px;
+  z-index: 2;
+}
+
+.info__img::after {
+  content: "";
+  position: absolute;
+  background: url(/img/rect.png) left center no-repeat;
+  width: 630px;
+  height: 541px;
+  top: -41px;
+  right: 54px;
 }
 
 /* HELP SECTION */
@@ -997,7 +978,6 @@ img {
 
 .header {
   width: 100%;
-  min-height: 825px;
   position: relative;
 }
 @media only screen and (max-width: 1269px) {
@@ -1007,16 +987,21 @@ img {
 }
 
 .header__container {
-  max-width: 1150px;
-  min-height: 713px;
-  background-image: url(/img/dog-1.jpg);
-  background-repeat: no-repeat;
-  background-position: top -10px right 2px;
   position: relative;
-  z-index: 10;
+}
+
+.header__container::after {
+  content: "";
+  background: url(/img/dog-1.jpg) right top no-repeat;
+  position: absolute;
+  width: 718px;
+  height: 713px;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 @media only screen and (max-width: 1269px) {
-  .header__container {
+  .header__container::after {
     max-width: 804px;
     background-image: url(/img/dog-1024.jpg);
     min-height: 564px;
@@ -1030,7 +1015,7 @@ img {
   min-height: 469px;
   display: block;
   position: absolute;
-  top: 64.5%;
+  top: 518%;
   right: 14.5%;
   z-index: 100;
 }
@@ -1041,16 +1026,4 @@ img {
     top: 66.5%;
     right: -4%;
   }
-}
-
-.header__container::after {
-  content: "";
-  background-image: url(/img/illbebest.png);
-  background-repeat: no-repeat;
-  left: -110px;
-  top: 366px;
-  position: absolute;
-  min-width: 772px;
-  min-height: 404px;
-  z-index: -1;
 }
