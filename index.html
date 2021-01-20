@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -249,16 +250,124 @@
                 <div class="container">
                     <div id="our-animals" class="animals__title title title-light">Наши подопечные</div>
 
+                    <div class="animals__info"> <a class="link" href="#">Посмотреть всех (157)</a></div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper animal-gallery">
+                            <!-- Slides -->
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/blacky.jpg" alt="blacky">
+                                    <h4 class="card__title">Блэки</h4>
+                                    <p class="card__subtitle">Мальчик, 7 месяцев</p>
+                                    <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/monik.jpg" alt="monik">
+                                    <h4 class="card__title">Моник</h4>
+                                    <p class="card__subtitle">Мальчик, 7 месяцев</p>
+                                    <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+                                    <h4 class="card__title">Саманта</h4>
+                                    <p class="card__subtitle">Девочка, 1 год</p>
+                                    <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/blacky.jpg" alt="blacky">
+                                    <h4 class="card__title">Блэки</h4>
+                                    <p class="card__subtitle">Мальчик, 7 месяцев</p>
+                                    <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/monik.jpg" alt="monik">
+                                    <h4 class="card__title">Моник</h4>
+                                    <p class="card__subtitle">Мальчик, 7 месяцев</p>
+                                    <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            <div class="swiper-slide card">
+                                <!-- <li class="animal-gallery__item card"> -->
+                                    <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+                                    <h4 class="card__title">Саманта</h4>
+                                    <p class="card__subtitle">Девочка, 1 год</p>
+                                    <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>
+                                    <a class="card__link link" href="/">Подробнее</a>
+                                <!-- </li> -->
+                            </div>
+                            
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need navigation buttons -->
+                        <div class="arrow-left">
+                            <img src="/img/bi_arrow-left-circle.svg" alt="left-arrow">
+                        </div>
+                        <div class="arrow-right">
+                            <img src="/img/bi_arrow-right-circle.svg" alt="right-arrow">
+                        </div>
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-button-next"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                    
+
                     <ul class="animals__images animal-gallery">
 
-                        <li class="animal-gallery__item card">
+                        <!-- <li class="animal-gallery__item card">
                             <img class="card__img" src="/img/blacky.jpg" alt="blacky">
                             <h4 class="card__title">Блэки</h4>
                             <p class="card__subtitle">Мальчик, 7 месяцев</p>
                             <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
-                            <a  class="card__link" href="/">Подробнее</a>
+                            <a class="card__link link" href="/">Подробнее</a>
                         </li>
+                        <li class="animal-gallery__item card">
+                            <img class="card__img" src="/img/monik.jpg" alt="monik">
+                            <h4 class="card__title">Моник</h4>
+                            <p class="card__subtitle">Мальчик, 7 месяцев</p>
+                            <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
+                            <a class="card__link link" href="/">Подробнее</a>
+                        </li>
+                        <li class="animal-gallery__item card">
+                            <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+                            <h4 class="card__title">Саманта</h4>
+                            <p class="card__subtitle">Девочка, 1 год</p>
+                            <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>
+                            <a class="card__link link" href="/">Подробнее</a>
+                        </li> -->
                         
+                    </ul>
+
+                        <!-- <div class="arrow-left">
+                            <img src="/img/bi_arrow-left-circle.svg" alt="left-arrow">
+                        </div> -->
+                        <a href="/">Забрать домой</a>
+                        <a href="/">Забрать на передержку</a>
+
+                        <!-- <div class="arrow-right">
+                            <img src="/img/bi_arrow-right-circle.svg" alt="right-arrow">
+                        </div> -->
+
+
                         <!-- <div class="animals__img-wrapper">
                             <div class="animals__item">
                                 <div class="animals__inner">
@@ -435,9 +544,9 @@
                         </div>
                         </div> -->
 
-                    </ul>
+                    
 
-                    <div class="animals__info"> <a href="#">Посмотреть всех (157)</a></div>
+                    <!-- <div class="animals__info"> <a href="#">Посмотреть всех (157)</a></div> -->
                     <div class="animlas__more-info">
                         <div class="more-info__text">
                             Помочь быстрее пристроить хвостиков можно путем размещения наших постов у себя в соц сетях.
@@ -723,6 +832,8 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
 </body>
 
 </html>

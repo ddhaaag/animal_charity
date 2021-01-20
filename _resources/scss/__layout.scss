@@ -418,11 +418,68 @@
 
 /* ANIMAL */
 
+.animals__info {
+    text-align: center;
+    margin-bottom: 19px;
+}
+
+.animals__info a:hover {
+    text-decoration: none;
+}
 
 
+.animals__images {
+    list-style-type: none;
+}
 
+.animal-gallery {
+    display: flex;
+    // justify-content: space-between;
+}
 
+.animal-gallery__item,
+.swiper-slide {
+    padding: 16px 16px 8px 17px;
+    // margin-right: 10px;
+    // width: 33.3%;
+}
 
+.card {
+    width: 368px;
+    // background-color: $white-bg;
+    background-color: $main-bg;
+    box-shadow: 6px 6px 16px rgba(163, 163, 163, 0.6), -8px -8px 16px #FFFFFF, inset 4px 4px 16px rgba(203, 203, 203, 0.25);
+    border-radius: 5px;
+}
+
+.card__title {
+    text-align: center;
+    font-size: $font-size--h4;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 10px;
+}
+
+.card__subtitle {
+    font-size: $font-size--small;
+    line-height: 20px;
+    color: $gray;
+    font-weight: 500;
+    padding: 8px 0 6px 0;
+}
+
+.card__text {
+    font-size: $font-size--small;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+// .card__link {
+    
+//     // border-bottom: 1px solid #000;
+// }
 
 
 .animals__gallery {
@@ -462,7 +519,7 @@
 
 .animals__title {
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
 }
 
 
@@ -536,23 +593,6 @@
     border: 2px solid #FBC832;
 }
 
-.animals__info a {
-    display: block;
-    height: 40px;
-    width: 204px;
-    margin: 0 auto;
-    color: #AD7F00;
-    font-size: 2rem;
-    line-height: 40px;
-    font-weight: 500;
-    position: relative;
-    top: -23px;
-    left: -21px;
-}
-
-.animals__info a:hover {
-    text-decoration: none;
-}
 
 .animlas__more-info {
     display: flex;  
@@ -620,18 +660,18 @@
     height: 1px;
     display: block;
     background-color: #EEBF3A;
-    width: 100%;
+    width: 50%;
     position: absolute;
 }
 
 .home__container::before {
-    top: 70px;
-    left: -670px;
+    top: 69px;
+    left: -110px;
 }
 
 .home__container::after {
-    top: 70px;
-    right: -670px;
+    top: 69px;
+    right: -110px;
 }
 // .img-nav::after, 
 // .img-nav::before {
