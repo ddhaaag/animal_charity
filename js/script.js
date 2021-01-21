@@ -1,6 +1,7 @@
 var mySwiper = new Swiper('.swiper-container', {
     
     slidesPerView: 3,
+    spaceBetween: 20,
     // Optional parameters
     // direction: 'vertical',
     // loop: true,
@@ -9,13 +10,15 @@ var mySwiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
     },
-  
+    
+    centeredSlides: true,
     // Navigation arrows
     navigation: {
-      nextEl: '.arrow-right',
-      prevEl: '.arrow-left',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-  
+    loop: true,
+   
     // And if we need scrollbar
     // scrollbar: {
     //   el: '.swiper-scrollbar',
