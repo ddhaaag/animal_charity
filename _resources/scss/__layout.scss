@@ -181,7 +181,7 @@
     min-height: 650px;
     position: relative;
     background-color: $white-bg;
-    z-index: 1;
+    
 
     @media only screen and (max-width: 1269px) {
         min-height: 568px;
@@ -193,11 +193,8 @@
         padding-top: 64px;
     }
     &__img {   
-        flex: 0 1 51%;
-        justify-self: start;
-        // position: relative;
-        left: 3px;
-        top: 22px;
+        flex: 0 1 50%;
+        position: relative;
 
         @media only screen and (max-width: 1269px) {
             min-height: 568px;
@@ -205,13 +202,14 @@
     }
     
     &__text-block {
-        flex: 0 1 49%;
+        flex: 0 1 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
         width: 100%;
         max-width: 466px;
+        padding: 0 0 0 12px;
     }
     &__title {
         margin-top: 62px;
@@ -238,11 +236,11 @@
 .info__img::before {
     content: '';
     position: absolute;
-    background: url(/img/dog&cat.png) left center no-repeat;
+    background: url(/img/dog&cat.png) top left no-repeat;
     width: 630px;
     height: 541px;
-    top: -32px;
-    right: 66px;
+    top: -10px;
+    right: 52px;
     z-index: 2;
 }
 
@@ -252,8 +250,9 @@
     background: url(/img/rect.png) left center no-repeat;
     width: 630px;
     height: 541px;
-    top: -42px;
-    right: 66px;
+    top: -20px;
+    left: -109px;
+    z-index: 1;
 }
 
 /* HELP SECTION */

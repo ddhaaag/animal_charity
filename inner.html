@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши подопечные</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="other-animals">
+  
+  <div class="back">
+    <a href="./index.html">Вернуться назад</a>
+    <h3>Наши подопечные</h3>
+    
+    <!-- <div class="dropdown">
+      <a href="#">Показать</a>
+      <button onclick="myFunction()" class="dropbtn">Коты и собаки</button>
+      <div id="myDropdown" class="dropdown-content">
+        <button class="dropdown__link">Коты и собаки</button>
+        <button class="dropdown__link">Только коты</button>
+        <button class="dropdown__link">Только собаки</button>
+      </div> -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Коты и собаки</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Коты и собаки</a>
+          <a href="#about">Только коты</a>
+          <a href="#contact">Только собаки</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+</body>
+</html>
