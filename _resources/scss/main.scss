@@ -54,8 +54,8 @@ body {
     line-height: 120%;
 
     @media only screen and (max-width: 1269px) {
-        font-size: 24px;
-        line-height: 28.8px;
+        // font-size: 24px;
+        // line-height: 28.8px;
     }
 
 }
@@ -83,7 +83,7 @@ img {
     position: relative;
 
     @media only screen and (max-width: 1269px) {
-        min-height: 642px;
+        // min-height: 642px;
     }
 }
 
@@ -109,9 +109,9 @@ img {
     // z-index: 10;
 
     @media only screen and (max-width: 1269px) {
-        max-width: 804px;
+        width: 804px;
         background-image: url(/img/dog-1024.jpg);
-        min-height: 564px;
+        height: 564px;
     }
 }
 
@@ -129,7 +129,7 @@ img {
     @media only screen and (max-width: 1269px) {
         background-image: url(/img/cat-1024.png);
         background-repeat: no-repeat;
-        top: 66.5%;
+        top: 409%;
         right: -4%;
     }
 }
@@ -260,8 +260,6 @@ img {
 .card {
     padding: 16px 16px 8px 17px;
 }
-
-
 
 
 /* FILTER */

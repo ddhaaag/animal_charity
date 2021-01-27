@@ -17,8 +17,8 @@
     @media only screen and (max-width: 1269px) {
         display: flex;
         justify-content: space-between;
-        padding-top: 40px;
-        margin-bottom: 27px;
+        padding-top: 37px;
+        margin-bottom: 23px;
     }
  
     &__items:nth-child(1) {
@@ -139,6 +139,9 @@
 
 .button {
     padding-bottom: 272px;
+    @media (max-width: 1269px) {
+        padding: 56px;
+    }
 }
 
 .hover__text {
@@ -191,6 +194,10 @@
         display: flex;
         justify-content: flex-start;
         padding-top: 64px;
+
+        @media (max-width: 1269px) {
+            padding-top: 0;
+        }
     }
     &__img {   
         flex: 0 1 50%;
@@ -198,6 +205,7 @@
 
         @media only screen and (max-width: 1269px) {
             min-height: 568px;
+            
         }
     }
     
@@ -210,6 +218,11 @@
         width: 100%;
         max-width: 466px;
         padding: 0 0 0 12px;
+
+        @media (max-width: 1269px) {
+            max-width: 325px;
+            align-items: start;
+        }
     }
     &__title {
         margin-top: 62px;
@@ -220,11 +233,16 @@
 
         @media only screen and (max-width: 1269px) {
             font-size: 2.4rem;
-
+            margin-top: -43px;
+            line-height: 29px;
+            margin-top: 65px;
         }
     }    
     &__text {
         margin-bottom: 20px;
+        @media (max-width: 1269px) {
+            margin-bottom: 10px;
+        }
     }
     
 }
@@ -242,7 +260,13 @@
     top: -10px;
     right: 52px;
     z-index: 2;
-}
+
+    @media (max-width: 1269px) {
+        background: url(/img/dog&cat-1024.png) top left no-repeat;
+        top: 36px;
+        right: -118px;
+    }
+}   
 
 .info__img::after {
     content: '';
@@ -253,6 +277,10 @@
     top: -20px;
     left: -109px;
     z-index: 1;
+
+    @media (max-width: 1269px) {
+        background: none;
+    }
 }
 
 /* HELP SECTION */
@@ -262,6 +290,9 @@
     margin-bottom: 45px;
     padding-top: 76px;
     font-weight: 300;
+    @media (max-width: 1269px) {
+        padding-top: 56px;
+    }
 }
 
 // .icon {
@@ -287,6 +318,11 @@
     margin-bottom: 8px;
 }
 
+.svg {
+    width: 50px;
+    height: 50px;
+}
+
 .item-help {
     display: flex;
     flex-direction: column;
@@ -300,8 +336,8 @@
 }
 
 .img-circle {
-    // border: 2px solid #FFC41E;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFC41E;  
+    // border: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
     border-radius: 50%;
     width: 150px;
@@ -312,6 +348,11 @@
     align-items: center;
     margin-bottom: 22px;
     transition: background-color 0.75s linear;
+
+    @media (max-width: 1269px) {
+        width: 110px;
+        height: 110px;
+    }
 }
 .img-circle:hover {
     background-color: #fff;
@@ -344,7 +385,7 @@
 }
 
 .help__title {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .help__text {
@@ -355,7 +396,7 @@
 
 .animals__info {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .animals__info a:hover {

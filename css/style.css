@@ -53,8 +53,8 @@
   .menu {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
-    margin-bottom: 27px;
+    padding-top: 37px;
+    margin-bottom: 23px;
   }
 }
 .menu__items:nth-child(1) {
@@ -177,6 +177,11 @@
 .button {
   padding-bottom: 272px;
 }
+@media (max-width: 1269px) {
+  .button {
+    padding: 56px;
+  }
+}
 
 .hover__text {
   position: absolute;
@@ -227,6 +232,11 @@
   justify-content: flex-start;
   padding-top: 64px;
 }
+@media (max-width: 1269px) {
+  .info__row {
+    padding-top: 0;
+  }
+}
 .info__img {
   flex: 0 1 50%;
   position: relative;
@@ -246,6 +256,12 @@
   max-width: 466px;
   padding: 0 0 0 12px;
 }
+@media (max-width: 1269px) {
+  .info__text-block {
+    max-width: 325px;
+    align-items: start;
+  }
+}
 .info__title {
   margin-top: 62px;
   margin-bottom: 26px;
@@ -256,10 +272,18 @@
 @media only screen and (max-width: 1269px) {
   .info__title {
     font-size: 2.4rem;
+    margin-top: -43px;
+    line-height: 29px;
+    margin-top: 65px;
   }
 }
 .info__text {
   margin-bottom: 20px;
+}
+@media (max-width: 1269px) {
+  .info__text {
+    margin-bottom: 10px;
+  }
 }
 
 .info__img {
@@ -276,6 +300,13 @@
   right: 52px;
   z-index: 2;
 }
+@media (max-width: 1269px) {
+  .info__img::before {
+    background: url(/img/dog&cat-1024.png) top left no-repeat;
+    top: 36px;
+    right: -118px;
+  }
+}
 
 .info__img::after {
   content: "";
@@ -287,6 +318,11 @@
   left: -109px;
   z-index: 1;
 }
+@media (max-width: 1269px) {
+  .info__img::after {
+    background: none;
+  }
+}
 
 /* HELP SECTION */
 .help__title-main {
@@ -295,12 +331,22 @@
   padding-top: 76px;
   font-weight: 300;
 }
+@media (max-width: 1269px) {
+  .help__title-main {
+    padding-top: 56px;
+  }
+}
 
 .help__gallery {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 8px;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
 }
 
 .item-help {
@@ -316,7 +362,7 @@
 }
 
 .img-circle {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #FFC41E;
   box-shadow: 6px 6px 16px rgba(224, 224, 224, 0.6), -6px -6px 16px rgba(255, 255, 255, 0.77);
   border-radius: 50%;
   width: 150px;
@@ -327,6 +373,12 @@
   align-items: center;
   margin-bottom: 22px;
   transition: background-color 0.75s linear;
+}
+@media (max-width: 1269px) {
+  .img-circle {
+    width: 110px;
+    height: 110px;
+  }
 }
 
 .img-circle:hover {
@@ -360,7 +412,7 @@
 }
 
 .help__title {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .help__text {
@@ -370,7 +422,7 @@
 /* ANIMAL */
 .animals__info {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .animals__info a:hover {
@@ -1200,13 +1252,6 @@ body {
   font-weight: 600;
   line-height: 120%;
 }
-@media only screen and (max-width: 1269px) {
-  .title {
-    font-size: 24px;
-    line-height: 28.8px;
-  }
-}
-
 .title-light {
   font-weight: 300;
 }
@@ -1227,12 +1272,6 @@ img {
   width: 100%;
   position: relative;
 }
-@media only screen and (max-width: 1269px) {
-  .header {
-    min-height: 642px;
-  }
-}
-
 .header__container {
   position: relative;
 }
@@ -1249,9 +1288,9 @@ img {
 }
 @media only screen and (max-width: 1269px) {
   .header__container::after {
-    max-width: 804px;
+    width: 804px;
     background-image: url(/img/dog-1024.jpg);
-    min-height: 564px;
+    height: 564px;
   }
 }
 
@@ -1270,7 +1309,7 @@ img {
   .header__container::before {
     background-image: url(/img/cat-1024.png);
     background-repeat: no-repeat;
-    top: 66.5%;
+    top: 409%;
     right: -4%;
   }
 }
