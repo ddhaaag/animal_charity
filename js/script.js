@@ -26,3 +26,23 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 
+/* Hambuger */
+
+function myFunction(x) {
+  let menu = document.querySelector('.menu');
+  // let mnuMobile =  document.querySelector('.menu-mobile');
+
+  // if (mnuMobile.style.display === "block") {
+  //   mnuMobile.style.display = "none";
+  // } else {
+  //   mnuMobile.style.display = "block";
+  // }
+
+  x.classList.toggle("change");
+  
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
