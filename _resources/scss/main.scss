@@ -124,13 +124,14 @@ img {
         width: 312px;
         background-image: url(/img/dog-640.jpg);
         height: 357px;
-        right: -125px;
+        right: -129px;
     }
 
     @media only screen and (max-width: 639px) {
         width: 225px;
         background-image: url(/img/dog-360.jpg);
         height: 357px; 
+        right: -30px;
     }
 }
 
@@ -141,7 +142,7 @@ img {
     height: 469px;
     display: block;
     position: absolute;
-    top: 522%;
+    top: 480px;
     right: 14.5%; 
     z-index: 100;
 
@@ -167,12 +168,13 @@ img {
         background-repeat: no-repeat;
         width: 165px;
         height: 157px;
-        top: 337%;
+        top: 252px;
         right: -8.5%;
     }
 
     @media only screen and (max-width: 639px) {
-        top: 230%;
+        top: 250px;
+        right: 22px;
     }
 }
 
