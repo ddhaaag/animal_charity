@@ -113,5 +113,11 @@ $font-family: 'Gilroy', Arial, sans-serif;
         padding: 5px 33px 5px 32px;
         font-size: 18px;
     }
+
+    @media only screen and (max-width: 639px) {
+        width: 100px;
+        padding: 5px 10px 5px 10px;
+        font-size: 18px;
+    }
 }
 

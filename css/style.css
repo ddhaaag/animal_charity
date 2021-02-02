@@ -443,6 +443,13 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 639px) {
+  .btn {
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+  }
+}
 
 .button {
   padding-bottom: 272px;
@@ -971,6 +978,11 @@
 .animal-btns {
   text-align: center;
 }
+@media only screen and (max-width: 639px) {
+  .animal-btns {
+    width: 300px;
+  }
+}
 
 .animal-btn-home {
   margin-bottom: 20px;
@@ -1089,6 +1101,12 @@
   justify-content: center;
   margin: 54px 0 65px -4px;
 }
+@media only screen and (max-width: 639px) {
+  .animlas__more-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .more-info__text {
   width: 583px;
@@ -1099,6 +1117,13 @@
   .more-info__text {
     font-size: 16px;
     line-height: 22px;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .more-info__text {
+    font-size: 14px;
+    line-height: 20px;
+    width: 300px;
   }
 }
 

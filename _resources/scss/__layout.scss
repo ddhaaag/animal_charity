@@ -938,6 +938,10 @@
 
 .animal-btns {
     text-align: center;
+
+    @media only screen and (max-width: 639px) {
+        width: 300px;
+    }
 }
 
 .animal-btn-home {
@@ -1060,6 +1064,12 @@
     display: flex;  
     justify-content: center;
     margin: 54px 0 65px -4px;
+
+    @media only screen and (max-width: 639px) {
+        flex-direction: column;
+        text-align: center;
+    
+    }
 }
 
 .more-info__text {
@@ -1069,6 +1079,12 @@
     @media (max-width: 1269px) {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    @media only screen and (max-width: 639px) {
+        font-size: 14px;
+        line-height: 20px;
+        width: 300px;
     }
 }
 
