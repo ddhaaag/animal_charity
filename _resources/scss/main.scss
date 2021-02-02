@@ -96,7 +96,7 @@ img {
     // max-width: 1150px;
     // min-height: 713px;
     // background: url(/img/dog-1.jpg);
-    background: url(/img/dog-1.jpg) right top no-repeat;
+    background: url(../../img/dog-1.jpg) right top no-repeat;
     position: absolute;
     width: 718px;
     height: 713px;
@@ -110,7 +110,7 @@ img {
 
     @media only screen and (max-width: 1269px) {
         max-width: 504px;
-        background-image: url(/img/dog-1024.jpg);
+        background-image: url(./img/dog-1024.jpg);
         height: 564px;
     }
 
