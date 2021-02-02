@@ -598,7 +598,7 @@
 .info__img::before {
   content: "";
   position: absolute;
-  background: url(/img/dog&cat.png) top left no-repeat;
+  background: url(../img/dog&cat.png) top left no-repeat;
   width: 630px;
   height: 541px;
   top: -10px;
@@ -607,14 +607,14 @@
 }
 @media (max-width: 1269px) {
   .info__img::before {
-    background: url(/img/dog&cat-1024.png) top left no-repeat;
+    background: url(../img/dog&cat-1024.png) top left no-repeat;
     top: 36px;
     right: -118px;
   }
 }
 @media only screen and (max-width: 639px) {
   .info__img::before {
-    background: url(/img/dog&cat-360.png) top left no-repeat;
+    background: url(../img/dog&cat-360.png) top left no-repeat;
     top: 16px;
     left: -31px;
     width: 251px;
@@ -625,7 +625,7 @@
 .info__img::after {
   content: "";
   position: absolute;
-  background: url(/img/rect.png) left center no-repeat;
+  background: url(../img/rect.png) left center no-repeat;
   width: 630px;
   height: 541px;
   top: -20px;
@@ -934,13 +934,13 @@
 }
 
 .swiper-button-prev {
-  background-image: url(/img/bi_arrow-left-circle.svg);
+  background-image: url(../img/bi_arrow-left-circle.svg);
   margin-right: auto;
   margin-top: 5px;
 }
 
 .swiper-button-next {
-  background-image: url(/img/bi_arrow-right-circle.svg);
+  background-image: url(../img/bi_arrow-right-circle.svg);
   margin-left: auto;
   margin-top: 5px;
 }
@@ -1584,7 +1584,7 @@
 .volun-image::before {
   content: "";
   position: absolute;
-  background: url(/img/volunt1.png) left center no-repeat;
+  background: url(../img/volunt1.png) left center no-repeat;
   width: 620px;
   height: 541px;
   top: -124px;
@@ -1593,14 +1593,14 @@
 }
 @media (max-width: 1269px) {
   .volun-image::before {
-    background: url(/img/volunt-1024.png) left center no-repeat;
+    background: url(../img/volunt-1024.png) left center no-repeat;
     top: -50px;
     left: -103px;
   }
 }
 @media (max-width: 639px) {
   .volun-image::before {
-    background: url(/img/volunt-360.png) left center no-repeat;
+    background: url(../img/volunt-360.png) left center no-repeat;
     top: -50px;
     left: -103px;
     width: 250px;
@@ -1796,7 +1796,7 @@
 .thanks {
   max-width: 100%;
   min-height: 741px;
-  background-image: url(/img/footer_img.jpg);
+  background-image: url(../img/footer_img.jpg);
   background-size: cover;
 }
 @media (max-width: 1269px) {
@@ -2026,7 +2026,7 @@ img {
 
 .header__container::after {
   content: "";
-  background: url(../../img/dog-1.jpg) right top no-repeat;
+  background: url(../img/dog-1.jpg) right top no-repeat;
   position: absolute;
   width: 718px;
   height: 713px;
@@ -2037,13 +2037,13 @@ img {
 @media only screen and (max-width: 1269px) {
   .header__container::after {
     max-width: 504px;
-    background-image: url(./img/dog-1024.jpg);
+    background-image: url(../img/dog-1024.jpg);
     height: 564px;
   }
 }
 @media only screen and (max-width: 1023px) {
   .header__container::after {
-    background-image: url(/img/dog-768.jpg);
+    background-image: url(../img/dog-768.jpg);
     width: 344px;
     height: 385px;
   }
@@ -2051,7 +2051,7 @@ img {
 @media only screen and (max-width: 767px) {
   .header__container::after {
     width: 312px;
-    background-image: url(/img/dog-640.jpg);
+    background-image: url(../img/dog-640.jpg);
     height: 357px;
     right: -129px;
   }
@@ -2059,7 +2059,7 @@ img {
 @media only screen and (max-width: 639px) {
   .header__container::after {
     width: 225px;
-    background-image: url(/img/dog-360.jpg);
+    background-image: url(../img/dog-360.jpg);
     height: 357px;
     right: -30px;
   }
@@ -2067,7 +2067,7 @@ img {
 
 .header__container::before {
   content: "";
-  background-image: url(/img/cat-1.png);
+  background-image: url(../img/cat-1.png);
   width: 483px;
   height: 469px;
   display: block;
@@ -2078,7 +2078,7 @@ img {
 }
 @media only screen and (max-width: 1269px) {
   .header__container::before {
-    background-image: url(/img/cat-1024.png);
+    background-image: url(../img/cat-1024.png);
     background-repeat: no-repeat;
     width: 344px;
     height: 326px;
@@ -2088,7 +2088,7 @@ img {
 }
 @media only screen and (max-width: 1023px) {
   .header__container::before {
-    background-image: url(/img/cat-768.png);
+    background-image: url(../img/cat-768.png);
     width: 235px;
     height: 222px;
     top: 260px;
@@ -2096,7 +2096,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .header__container::before {
-    background-image: url(/img/cat-640.png);
+    background-image: url(../img/cat-640.png);
     background-repeat: no-repeat;
     width: 165px;
     height: 157px;
@@ -2124,7 +2124,7 @@ img {
 .dropbtn::after {
   content: "";
   display: block;
-  background: url(/img/Chevron_Down.svg);
+  background: url(../img/Chevron_Down.svg);
   width: 24px;
   height: 24px;
   position: absolute;
@@ -2194,7 +2194,7 @@ img {
 .back__link::before {
   content: "";
   position: absolute;
-  background: url(/img/back.svg) top left no-repeat;
+  background: url(../img/back.svg) top left no-repeat;
   width: 30px;
   height: 30px;
   top: -4px;

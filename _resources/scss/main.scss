@@ -96,7 +96,7 @@ img {
     // max-width: 1150px;
     // min-height: 713px;
     // background: url(/img/dog-1.jpg);
-    background: url(../../img/dog-1.jpg) right top no-repeat;
+    background: url(../img/dog-1.jpg) right top no-repeat;
     position: absolute;
     width: 718px;
     height: 713px;
@@ -110,26 +110,26 @@ img {
 
     @media only screen and (max-width: 1269px) {
         max-width: 504px;
-        background-image: url(./img/dog-1024.jpg);
+        background-image: url(../img/dog-1024.jpg);
         height: 564px;
     }
 
     @media only screen and (max-width: 1023px) {
-        background-image: url(/img/dog-768.jpg);
+        background-image: url(../img/dog-768.jpg);
         width: 344px;
         height: 385px;
     }
 
     @media only screen and (max-width: 767px) {
         width: 312px;
-        background-image: url(/img/dog-640.jpg);
+        background-image: url(../img/dog-640.jpg);
         height: 357px;
         right: -129px;
     }
 
     @media only screen and (max-width: 639px) {
         width: 225px;
-        background-image: url(/img/dog-360.jpg);
+        background-image: url(../img/dog-360.jpg);
         height: 357px; 
         right: -30px;
     }
@@ -137,7 +137,7 @@ img {
 
 .header__container::before {
     content: '';
-    background-image: url(/img/cat-1.png);
+    background-image: url(../img/cat-1.png);
     width: 483px;
     height: 469px;
     display: block;
@@ -147,7 +147,7 @@ img {
     z-index: 100;
 
     @media only screen and (max-width: 1269px) {
-        background-image: url(/img/cat-1024.png);
+        background-image: url(../img/cat-1024.png);
         background-repeat: no-repeat;
         width: 344px;
         height: 326px;
@@ -156,7 +156,7 @@ img {
     }
 
     @media only screen and (max-width: 1023px) {
-        background-image: url(/img/cat-768.png);
+        background-image: url(../img/cat-768.png);
         width: 235px;
         height: 222px;
         top: 260px;
@@ -164,7 +164,7 @@ img {
 
 
     @media only screen and (max-width: 767px) {
-        background-image: url(/img/cat-640.png);
+        background-image: url(../img/cat-640.png);
         background-repeat: no-repeat;
         width: 165px;
         height: 157px;
@@ -205,7 +205,7 @@ img {
 .dropbtn::after {
     content: '';
     display: block;
-    background: url(/img/Chevron_Down.svg);
+    background: url(../img/Chevron_Down.svg);
     width: 24px;
     height: 24px;
     position: absolute;
@@ -278,7 +278,7 @@ img {
 .back__link::before {
     content: '';
     position: absolute;
-    background: url(/img/back.svg) top left no-repeat;
+    background: url(../img/back.svg) top left no-repeat;
     width: 30px;
     height: 30px;
     top: -4px;

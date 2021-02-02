@@ -575,7 +575,7 @@
 .info__img::before {
     content: '';
     position: absolute;
-    background: url(/img/dog&cat.png) top left no-repeat;
+    background: url(../img/dog&cat.png) top left no-repeat;
     width: 630px;
     height: 541px;
     top: -10px;
@@ -583,13 +583,13 @@
     z-index: 2;
 
     @media (max-width: 1269px) {
-        background: url(/img/dog&cat-1024.png) top left no-repeat;
+        background: url(../img/dog&cat-1024.png) top left no-repeat;
         top: 36px;
         right: -118px;
     }
 
     @media only screen and (max-width: 639px) {
-        background: url(/img/dog&cat-360.png) top left no-repeat;
+        background: url(../img/dog&cat-360.png) top left no-repeat;
         top: 16px;
         left: -31px;
         width: 251px;
@@ -601,7 +601,7 @@
 .info__img::after {
     content: '';
     position: absolute;
-    background: url(/img/rect.png) left center no-repeat;
+    background: url(../img/rect.png) left center no-repeat;
     width: 630px;
     height: 541px;
     top: -20px;
@@ -633,6 +633,7 @@
     margin-bottom: 45px;
     padding-top: 76px;
     font-weight: 300;
+
     @media (max-width: 1269px) {
         padding-top: 62px;
         font-size: 28px;
@@ -902,13 +903,13 @@
 }
 
 .swiper-button-prev {
-    background-image: url(/img/bi_arrow-left-circle.svg);
+    background-image: url(../img/bi_arrow-left-circle.svg);
     margin-right: auto;
     margin-top: 5px;
 }
 
 .swiper-button-next {
-    background-image: url(/img/bi_arrow-right-circle.svg);
+    background-image: url(../img/bi_arrow-right-circle.svg);
     margin-left: auto;
     margin-top: 5px;
 }
@@ -1542,7 +1543,7 @@
 .volun-image::before {
     content: '';
     position: absolute;
-    background: url(/img/volunt1.png) left center no-repeat;
+    background: url(../img/volunt1.png) left center no-repeat;
     width: 620px;
     height: 541px;
     top: -124px;
@@ -1550,13 +1551,13 @@
     z-index: 2;
 
     @media (max-width: 1269px) {
-        background: url(/img/volunt-1024.png) left center no-repeat;
+        background: url(../img/volunt-1024.png) left center no-repeat;
         top: -50px;
         left: -103px;
     }
 
     @media (max-width: 639px) {
-        background: url(/img/volunt-360.png) left center no-repeat;
+        background: url(../img/volunt-360.png) left center no-repeat;
         top: -50px;
         left: -103px;
         width: 250px;
@@ -1745,7 +1746,7 @@
 .thanks {
     max-width: 100%;
     min-height: 741px;
-    background-image: url(/img/footer_img.jpg);
+    background-image: url(../img/footer_img.jpg);
     background-size: cover;
 
     @media (max-width: 1269px) {
