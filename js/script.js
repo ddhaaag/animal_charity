@@ -55,4 +55,5 @@ var mySwiper = new Swiper('.swiper-container', {
 
 $('#toggle').click(function() {
   $(this).toggleClass('on');
+  $('.menu').slideToggle();
 })

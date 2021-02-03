@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Наши подопечные</title>
+  
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body id="other-animals">
@@ -14,7 +15,7 @@
         <a class="back__link" href="./index.html">Вернуться назад</a>
         <h3 class="back__title">Наши подопечные</h3>
   
-        <div class="back-right">
+        <!-- <div class="back-right">
           <a class="dropdown__link" href="#">Показать</a>
         <div class="dropdown">
           <button class="dropbtn tablinks active">Коты и собаки</button>
@@ -25,8 +26,20 @@
             <a class="tablinks" onclick="filterSelection('dogs')">Только собаки</a>
           </div>
         </div>
-        </div>
-        
+        </div> -->
+    
+        <div class="select">
+          <input class="select__input" type="hidden" name="">
+          <div class="select__head">Коты и собаки</div>
+          <ul class="select__list" style="display: none;">
+              <li class="select__item">Коты и собаки</li>
+              <li class="select__item">Только коты</li>
+              <li class="select__item">Только собаки</li>
+          </ul>
+      </div>
+
+
+
 
       </div>
       
@@ -38,7 +51,7 @@
         <div class="inner-gallery">
       
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/monik.jpg" alt="monik">
+            <img class="card__img" src="./img/monik.jpg" alt="monik">
             <h4 class="card__title">Моник</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
@@ -162,6 +175,7 @@
       </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="./js/inner.js"></script>
 
 </body>
