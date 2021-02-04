@@ -58,17 +58,14 @@
 }
 @media only screen and (max-width: 1023px) {
   .menu {
-    display: none;
-    max-width: 100%;
-    text-align: center;
     position: fixed;
     background-color: #fff;
     top: 70px;
     right: 0;
     left: 0;
-    height: 300px;
     z-index: 200;
     padding-top: 0;
+    display: none;
   }
   .menu:before {
     content: "";
@@ -81,6 +78,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
+  .menu::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(../img/close.svg) no-repeat;
+    top: 300px;
+    left: 47%;
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width: 767px) {
   .menu {
@@ -89,26 +96,13 @@
 }
 @media only screen and (max-width: 1023px) {
   .menu__item {
-    padding-bottom: 24px;
     display: block;
-    padding-top: 24px;
-    position: relative;
+    border-bottom: 1px solid #FBC832;
+    text-align: center;
   }
-  .menu__item::after {
-    content: "";
-    position: absolute;
-    width: 62.77%;
-    height: 1px;
-    background-color: #FBC832;
-    top: 0;
-    left: 17%;
+  .menu__item:last-child {
+    border-bottom: none;
   }
-  .menu__item::after:first-of-type {
-    display: none;
-  }
-}
-.menu__item:last-child {
-  border-bottom: none;
 }
 .menu__item:nth-child(2) {
   margin-right: 155px;
@@ -132,7 +126,9 @@
 @media only screen and (max-width: 639px) {
   .menu__link {
     font-size: 16px;
-    line-height: 19px;
+    display: block;
+    line-height: 75px;
+    margin-right: 0;
   }
 }
 .menu__link:hover {
@@ -2248,6 +2244,20 @@ body {
   line-height: 22px;
 }
 
+.fancybox-content {
+  padding: 30px 40px;
+}
+@media (max-width: 639px) {
+  .fancybox-content {
+    padding: 30px;
+  }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  right: 30px;
+  top: 15px;
+}
+
 form {
   margin: 0 auto;
   width: 525px;
@@ -2255,6 +2265,11 @@ form {
   padding: 30px 40px;
   box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
   border-radius: 5px;
+}
+@media (max-width: 639px) {
+  form {
+    max-width: 300px;
+  }
 }
 
 .inform {
@@ -2266,14 +2281,62 @@ form {
   margin-bottom: 32px;
 }
 
-label {
+.form__title {
+  font-size: 28px;
+  line-height: 24px;
+  color: #B3B3B3;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FBC832;
+}
+@media (max-width: 639px) {
+  .form__title {
+    font-size: 22px;
+  }
+}
+
+.form__text {
+  color: #6B6B6B;
+}
+@media (max-width: 639px) {
+  .form__text {
+    margin-bottom: 30px;
+  }
+}
+
+.form__label {
   font-size: 14px;
   line-height: 20px;
   color: #474747;
   opacity: 0.7;
 }
 
-input, textarea {
+@media (max-width: 639px) {
+  .form__name {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .form__notice {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  .form__call {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  .belnum {
+    display: none;
+  }
+}
+
+input,
+textarea {
   font-size: 16px;
   line-height: 22px;
   color: #6B6B6B;
@@ -2285,16 +2348,47 @@ input, textarea {
   border-radius: 2px;
 }
 
+.form-btn {
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 500;
+  border-radius: 58px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__buton--yellow {
+  background-color: #FFE28E;
+  border: none;
+  padding: 0 50px;
+  color: #6B6B6B;
+  margin-bottom: 20px;
+}
+
+.form__buton--white {
+  border: 2px solid #FFC41E;
+  background-color: #FFFFFF;
+  padding: 0 50px;
+  color: #242424;
+}
+
 .necessary {
   font-size: 14px;
   line-height: 20px;
   color: #B3B3B3;
+  margin-bottom: 22px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 639px) {
+  .form__tnx {
+    margin-bottom: 20px;
+  }
 }
 
 *,
@@ -2307,6 +2401,11 @@ ul {
 
 html {
   font-size: 10px;
+}
+@media only screen and (max-width: 639px) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 body {
@@ -2327,21 +2426,25 @@ body {
 @media only screen and (max-width: 1269px) {
   .container {
     max-width: 804px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1023px) {
   .container {
     max-width: 548px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 382px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
   .container {
-    max-width: 300px;
+    padding: 0 20px;
+    width: 100%;
   }
 }
 
@@ -2620,7 +2723,6 @@ img {
     display: block;
     position: absolute;
     top: 37px;
-    padding-bottom: 36px;
   }
 }
 

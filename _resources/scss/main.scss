@@ -13,7 +13,10 @@
 
 html {
     font-size: 10px;
-    // overflow-x: hidden;
+    
+    @media only screen and (max-width: 639px) {
+        overflow-x: hidden;
+    }
 }
 
 body {
@@ -34,18 +37,23 @@ body {
 
     @media only screen and (max-width: 1269px) {
         max-width: 804px;
+        width: 100%;
     }
 
     @media only screen and (max-width: 1023px) {
         max-width: 548px;
+        width: 100%;
     }
 
     @media only screen and (max-width: 767px) {
         max-width: 382px;
+        width: 100%;
     }
 
     @media only screen and (max-width: 639px) {
-        max-width: 300px;
+        // max-width: 300px;
+        padding: 0 20px;
+        width: 100%;
     }
 }
 
@@ -458,7 +466,6 @@ img {
         display: block;
         position: absolute;
         top: 37px;
-        padding-bottom: 36px;
     }
   }
 
@@ -502,4 +509,6 @@ img {
   #toggle.on + #menu {
     opacity: 1;
     visibility: visible;
-  }
+}
+    
+

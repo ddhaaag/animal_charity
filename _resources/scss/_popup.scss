@@ -13,6 +13,20 @@ body {
   line-height: 22px;
 }
 
+.fancybox-content {
+  padding: 30px 40px;
+
+  @media (max-width: 639px) {
+    padding: 30px;
+
+  }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  right: 30px;
+  top: 15px;
+}
+
 form {
   margin: 0 auto;
   width: 525px;
@@ -20,6 +34,11 @@ form {
   padding: 30px 40px;
   box-shadow: 0px 0px 22px rgba(161, 161, 161, 0.25);
   border-radius: 5px;
+
+  @media (max-width: 639px) {
+    max-width: 300px;
+
+  }
 }
 
 .inform {
@@ -31,21 +50,62 @@ form {
   margin-bottom: 32px;
 }
 
-// h3 {
-//   font-size: 28px;
-//   line-height: 24px;
-//   color: #B3B3B3;
-//   padding-bottom: 10px;
-//   border-bottom:  1px solid #FBC832;
-// }
+.form__title {
+  font-size: 28px;
+  line-height: 24px;
+  color: #B3B3B3;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom:  1px solid #FBC832;
 
-label {
+  @media (max-width: 639px) {
+    font-size: 22px;
+  }
+}
+
+.form__text {
+  color: $gray;
+
+  @media (max-width: 639px) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__label {
   font-size: 14px;
   line-height: 20px;
   color: #474747;
   opacity: 0.7;
 }
-input, textarea {
+
+.form__name {
+  @media (max-width: 639px) {
+    margin-bottom: 16px;
+  }
+}
+
+.form__notice {
+  @media (max-width: 639px) {
+    margin-bottom: 24px;
+  }
+}
+
+.form__call {
+  @media (max-width: 639px) {
+    margin-bottom: 24px;
+  }
+}
+
+.belnum {
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+
+
+input,
+textarea {
   font-size: 16px;
   line-height: 22px;
   color: #6B6B6B;
@@ -57,14 +117,48 @@ input, textarea {
   border-radius: 2px;
 }
 
+.form-btn {
+  font-size: 1.8rem;
+  line-height: 30px;
+  font-weight: 500;
+  border-radius: 58px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__buton--yellow {
+  background-color: #FFE28E;
+  border: none;
+  padding: 0 50px;
+  color: $gray;
+  margin-bottom: 20px;
+}
+
+.form__buton--white {
+  border: 2px solid #FFC41E;
+  background-color: $white-bg;
+  padding: 0 50px;
+  color: $color-main;
+}
+
 .necessary {
   font-size: 14px;
   line-height: 20px;
   color: #B3B3B3;
+  margin-bottom: 22px;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+
+
+
+.form__tnx {
+  @media (max-width: 639px) {
+    margin-bottom: 20px;
+  }
 }
