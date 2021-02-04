@@ -827,6 +827,9 @@
 /* ANIMAL */
 
 .animals__container {
+
+    padding: 0 20px;
+
     @media (max-width: 1269px) {
         max-width: 1024px !important;
         width: 100%;
@@ -850,6 +853,11 @@
 .animal-gallery {
     display: flex;
     // justify-content: space-between;
+}
+
+.swiper-contaienr {
+    width: 100%;
+    height: 100%;
 }
 
 .animal-gallery__item,

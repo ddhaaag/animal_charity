@@ -2,30 +2,28 @@
 
 var mySwiper = new Swiper('.swiper-container', {
     
-    slidesPerView: 3,
-    spaceBetween: 20,
+    slidesPerView: 1,
+    spaceBetween: 6,
+    // centeredSlides: true,
 
     // Responsive breakpoints
   breakpoints: {
+
     // when window width is >= 320px
-    340: {
-      slidesPerView: 1,
-      spaceBetween: 6,
-      // centeredSlidesBounds: true,
-      centerInsufficientSlides: true,
-      // autoHeight: true,
-      width: 300
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
     },
     // when window width is >= 480px
-    // 480: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 6
-    // },
-    // when window width is >= 640px
-    640: {
+    768: {
       slidesPerView: 3,
-      spaceBetween: 40
-    }
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
     // Optional parameters
     // direction: 'vertical',
