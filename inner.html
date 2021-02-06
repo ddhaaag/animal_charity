@@ -12,32 +12,28 @@
   <section class="header-back">
     <div class="container">
       <div class="back">
-        <a class="back__link" href="./index.html">Вернуться назад</a>
-        <h3 class="back__title">Наши подопечные</h3>
-  
-        <!-- <div class="back-right">
-          <a class="dropdown__link" href="#">Показать</a>
-        <div class="dropdown">
-          <button class="dropbtn tablinks active">Коты и собаки</button>
-          <div id="myDropdown" class="dropdown-content">
-           
-            <a class="tablinks" onclick="filterSelection('all')">Коты и собаки</a>
-            <a class="tablinks" onclick="filterSelection('cats')">Только коты</a>
-            <a class="tablinks" onclick="filterSelection('dogs')">Только собаки</a>
-          </div>
-        </div>
-        </div> -->
-    
-        <div class="select">
-          <input class="select__input" type="hidden" name="">
-          <div class="select__head">Коты и собаки</div>
-          <ul class="select__list" style="display: none;">
-              <li class="select__item">Коты и собаки</li>
-              <li class="select__item">Только коты</li>
-              <li class="select__item">Только собаки</li>
-          </ul>
-      </div>
 
+          <div class="back__arrow">
+            <a class="back__link" href="./index.html">Вернуться назад</a>
+          </div>
+        <div class="back__title">
+          <h3 class="back__title">Наши подопечные</h3>
+        </div>
+      
+      <div class="custom-select-wrapper">
+       
+        <div class="custom-select">
+          
+            <div class="custom-select__trigger"><span>Коты и собаки</span>
+                <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+                <span class="custom-option selected" data-value="cats&dogs" onclick="filterSelection('all')">Коты и собаки</span>
+                <span class="custom-option" data-value="cats" onclick="filterSelection('cats')">Только коты</span>
+                <span class="custom-option" data-value="dogs" onclick="filterSelection('dogs')">Только собаки</span>
+            </div>
+        </div>
+      </div>
 
 
 
@@ -67,7 +63,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/lunatik.jpg" alt="samanta">
+            <img class="card__img" src="./img/lunatik.jpg" alt="samanta">
             <h4 class="card__title">Лунатик</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">Малыш хочет домой и часто плачет.</p>
@@ -75,7 +71,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/gerda.jpg" alt="blacky">
+            <img class="card__img" src="./img/gerda.jpg" alt="blacky">
             <h4 class="card__title">Герда</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
@@ -83,7 +79,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/monik.jpg" alt="monik">
+            <img class="card__img" src="./img/monik.jpg" alt="monik">
             <h4 class="card__title">Моник</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
@@ -91,7 +87,7 @@
           </div>
 
           <div class="card filterDiv cats">
-            <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+            <img class="card__img" src="./img/samanta.jpg" alt="samanta">
             <h4 class="card__title">Саманта</h4>
             <p class="card__subtitle">Девочка, 1 год</p>
             <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>
@@ -99,7 +95,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/blacky.jpg" alt="blacky">
+            <img class="card__img" src="./img/blacky.jpg" alt="blacky">
             <h4 class="card__title">Блэки</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
@@ -107,7 +103,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/monik.jpg" alt="monik">
+            <img class="card__img" src="./img/monik.jpg" alt="monik">
             <h4 class="card__title">Моник</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
@@ -115,7 +111,7 @@
           </div>
 
           <div class="card filterDiv cats">
-            <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+            <img class="card__img" src="./img/samanta.jpg" alt="samanta">
             <h4 class="card__title">Саманта</h4>
             <p class="card__subtitle">Девочка, 1 год</p>
             <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>
@@ -123,7 +119,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/blacky.jpg" alt="blacky">
+            <img class="card__img" src="./img/blacky.jpg" alt="blacky">
             <h4 class="card__title">Блэки</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">Веселый и очень игривый, ему так нужны ваша любовь и ласка.У него потрясающая густая шерсть.</p>
@@ -131,7 +127,7 @@
           </div>
 
           <div class="card filterDiv dogs">
-            <img class="card__img" src="/img/monik.jpg" alt="monik">
+            <img class="card__img" src="./img/monik.jpg" alt="monik">
             <h4 class="card__title">Моник</h4>
             <p class="card__subtitle">Мальчик, 7 месяцев</p>
             <p class="card__text">К поводку приучен. Не агрессивный. В еде не привередничает. С другими животными не конфликтует. Привит.</p>
@@ -139,7 +135,7 @@
           </div>
 
           <div class="card filterDiv cats">
-            <img class="card__img" src="/img/samanta.jpg" alt="samanta">
+            <img class="card__img" src="./img/samanta.jpg" alt="samanta">
             <h4 class="card__title">Саманта</h4>
             <p class="card__subtitle">Девочка, 1 год</p>
             <p class="card__text">Очень ласковая мяукалка. Хочет домой.</p>

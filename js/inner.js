@@ -1,31 +1,58 @@
 /*DROPDOWN */
 
-// /* When the user clicks on the button, 
-//     toggle between hiding and showing the dropdown content */
-//     let dropBtn = document.querySelector('.dropbtn');
-//     let dropdown = document.getElementById("myDropdown");
+document.querySelector('.custom-select-wrapper').addEventListener('click', function() {
+    this.querySelector('.custom-select').classList.toggle('open');
+})
 
-//     dropBtn.addEventListener('click', () => {
-//       dropdown.classList.toggle("show");
-//     });
+for (const option of document.querySelectorAll(".custom-option")) {
+    option.addEventListener('click', function() {
+        if (!this.classList.contains('selected')) {
+            this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+            this.classList.add('selected');
+            this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
+        }
+    })
+}
 
-//     // function myFunction() {
-//     //   document.getElementById("myDropdown").classList.toggle("show");
-//     // }
-    
-//     // Close the dropdown if the user clicks outside of it
-//     window.onclick = function(event) {
-//       if (!event.target.matches('.dropbtn')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var i;
-//         for (i = 0; i < dropdowns.length; i++) {
-//           var openDropdown = dropdowns[i];
-//           if (openDropdown.classList.contains('show')) {
-//             openDropdown.classList.remove('show');
-//           }
-//         }
-//       }
-//     }
+window.addEventListener('click', function(e) {
+    const select = document.querySelector('.custom-select')
+    if (!select.contains(e.target)) {
+        select.classList.remove('open');
+    }
+});
+
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
 
 

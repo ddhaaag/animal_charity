@@ -191,7 +191,7 @@
                 <div class="container animals__container">
                     <div id="our-animals" class="animals__title title-light">Наши подопечные</div>
 
-                    <div class="animals__info"> <a class="link" href="./inner.html">Посмотреть всех (157)</a></div>
+                    <div class="animals__info"> <a class="link" href="./inner.html">Посмотреть всех (157) <span class="animals__info--arrow"></span> </a></div>
 
                     <!-- Slider main container -->
                     <div class="swiper-container">
@@ -371,7 +371,7 @@
                                     <li>6. Гипермаркет «Евроопт», ул. Янки Купалы, 82А;</li>
                                     <li>7. Фитнес-центр «АДРЕНАЛИН», ул. Подольная, д.37.</li>
                                 </ul>
-                                <a class="card__link link" href="/">Посмотреть на карте</a>
+                                <a class="card__link link" href="/">Посмотреть на карте </a>
                             </div>
                         </div>
                     </div>
@@ -431,7 +431,21 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="helph__info-link"> <a href="#">Кому и куда передать?</a></div>
+                        <div class="helph__info-link">
+                             <a data-fancybox data-src="#hidden-content3" href="">Кому и куда передать?</a>
+                        </div>
+
+                        <form id="hidden-content3" class="form" action="" style="display: none;">
+                            <h3 class="form__title">Кому и куда передать?</h3>
+                            <p class="form__helph">Чтобы передать купленные вещи, свяжитесь с нашими волонтерами. Вы сможете договориться о времени и месте встречи.
+                                Если доставить сами не сможете - волонтеры вам помогут в доставке.</p>
+
+                            <p> <strong>+375 (33) 6237879</strong> Лена</p>  
+                            <p> <strong>+375 (29) 7877791</strong> Ольга</p>   
+                            <p>  <strong>+375 (29) 5837015</strong> Рита</p> 
+                       
+                        </form>
+
                     </div>
                 </div>
             </section>
@@ -454,8 +468,29 @@
                             </p>
                         </div>
                         <div class="auto-help__button">
-                            <a href="/" class="btn save-life__btn">Оставить заявку</a>
+                            <a data-fancybox data-src="#hidden-content4" href="" class="btn save-life__btn">Оставить заявку</a>
                         </div>
+
+                        <form id="hidden-content4" class="form" action="" style="display: none;">
+                            <h3 class="form__title">Автопомощь</h3>
+                            <h4 class="form__subtitle">Заявка</h4>
+                            <p class="form__text">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.</p>
+
+                            <p><label class="form__label" for="name">Фамилия и имя</label></p>
+                            <p><input class="form__name" id="name" type="text" placeholder="Введите ваше имя и фамилию"></p>
+
+                            <p><label class="form__label" for="number">Номер телефона (только белорусский <span class="belnum">номер</span>)</label></p>
+                            <p><input class="form__input" id="number" type="text" placeholder="Введите ваш номер телефона"></p>
+                            <p class="necessary">Обязательное поле для заполнения</p>
+
+                            <p><label class="form__label" for="notice">Замечания</label></p>
+                            <textarea class="form__notice" name="" id="notice" cols="10" rows="2" placeholder="Опишите, на какой срок вы смогли бы взять питомца на передержку"></textarea>
+
+                            <button class="form-btn form__buton--yellow">Отправить</button>
+                            <button class="form-btn form__buton--white">Отмена</button>
+                       
+                        </form>
+
                     </div>
                 </div>
             </section>
@@ -483,8 +518,34 @@
                             
                         </div>
                         <div class="volun__button">
-                            <a href="/" class="btn save-life__btn">Оставить заявку</a>
+                            <a data-fancybox data-src="#hidden-content5" href="" class="btn save-life__btn">Оставить заявку</a>
                         </div>
+
+                        <form id="hidden-content5" class="form" action="" style="display: none;">
+                            <h3 class="form__title">Волонтерство</h3>
+                            <h4 class="form__subtitle">Заявка</h4>
+                            <p class="form__text">Отправьте нам заявку о том, что готовы помочь. Когда нам будет необходима помощь в транспортировке, мы позвоним вам.</p>
+
+                            <p><label class="form__label" for="name">Фамилия и имя</label></p>
+                            <p><input class="form__name" id="name" type="text" placeholder="Введите ваше имя и фамилию"></p>
+
+                            <p><label class="form__label" for="number">Номер телефона (только белорусский <span class="belnum">номер</span>)</label></p>
+                            <p><input class="form__input" id="number" type="text" placeholder="Введите ваш номер телефона"></p>
+                            <p class="necessary">Обязательное поле для заполнения</p>
+                
+
+                            <p><label class="form__label" for="notice">Замечания</label></p>
+                            <textarea class="form__notice" name="" id="notice" cols="10" rows="2" placeholder="Опишите, на какой срок вы смогли бы взять питомца на передержку"></textarea>
+
+                            <button class="form-btn form__buton--yellow">Отправить</button>
+                            <button class="form-btn form__buton--white">Отмена</button>
+                       
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+
                     </div>
                 </div>
             </div>
