@@ -91,18 +91,21 @@ $font-family: 'Gilroy', Arial, sans-serif;
 
 
 @mixin btn-style {
-    background: #FBC832;
+    // background: #FBC832;
+    background: linear-gradient(180deg, #FFECB5 0%, #FFE69F 0.01%, #FFD45A 100%);
+    box-shadow: 3px 3px 13px rgb(0 0 0 / 25%);
     border-radius: 58px;
     font-weight: 500;
     font-size: 20px;
-    line-height: 200%;
+    line-height: 40px;
     color: $color-main;
     border: none;
     cursor: pointer;
-    // padding: 5px 33px 5px 32px;
-    padding: 8px 39px 8px 39px;
+    padding: 5px 32px 5px 32px;
     text-decoration: none;
     transition: all .75s ease;
+    position: relative;
+
 
     @media only screen and (max-width: 767px) {
         margin: 0 auto;
