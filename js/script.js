@@ -51,7 +51,25 @@ var mySwiper = new Swiper('.swiper-container', {
 
 /* Hambuger */
 
-$('#toggle').click(function() {
-  $(this).toggleClass('on');
-  $('.menu').slideToggle();
-})
+// $('#toggle').click(function() {
+//   $(this).toggleClass('on');
+//   $('.menu').slideToggle();
+// })
+
+const menuBtn = document.querySelector('#toggle');
+const menu = document.querySelector('.menu');
+const menuItems = document.querySelectorAll('.menu__item');
+const nav = document.querySelector('.menu-list');
+const backgroud = document.querySelector('.background');
+
+menuBtn.addEventListener('click', toggleHamburger);
+
+function toggleHamburger() {
+  menuBtn.classList.toggle('on');
+  menu.classList.toggle('showMenu');
+  backgroud.classList.toggle('showYellow');
+}
+
+menuItems.forEach( menuItem => {
+  menuItem.addEventListener('click', toggleHamburger);
+} )

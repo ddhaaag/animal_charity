@@ -34,6 +34,10 @@
   font-style: normal;
 }
 /* HEADER */
+.menu-list {
+  position: relative;
+}
+
 .menu {
   display: flex;
   padding-top: 50px;
@@ -52,63 +56,38 @@
 }
 @media only screen and (max-width: 1023px) {
   .menu {
+    display: block;
     position: fixed;
     background-color: #fff;
-    top: 70px;
-    right: 0;
+    top: 0;
     left: 0;
+    width: 100vw;
+    height: 40vh;
     z-index: 200;
     padding-top: 0;
-    display: none;
-  }
-  .menu:before {
-    content: "";
-    position: absolute;
-    top: 300px;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-  .menu::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background: url(../img/close.svg) no-repeat;
-    top: 300px;
-    left: 47%;
-    cursor: pointer;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .menu {
-    display: none;
+    padding-bottom: 0;
+    transform: translateY(-100%);
   }
 }
 @media only screen and (max-width: 1023px) {
   .menu__item {
-    display: block;
-    border-bottom: 1px solid #FBC832;
-    text-align: center;
+    width: 100%;
+    max-width: 548px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #EEBF3A;
   }
   .menu__item:last-child {
     border-bottom: none;
   }
 }
-.menu__item:nth-child(2) {
-  margin-right: 155px;
-}
-@media only screen and (max-width: 1269px) {
-  .menu__item:nth-child(2) {
-    margin-right: 30px;
-  }
-}
-@media only screen and (max-width: 1023px) {
-  .menu__item:nth-child(2) {
-    margin-right: 0px;
+@media only screen and (max-width: 639px) {
+  .menu__item {
+    width: 100%;
+    max-width: 226px;
   }
 }
 .menu__link {
@@ -116,6 +95,15 @@
   color: #242424;
   margin-right: 28px;
   transition: border-bottom 1s 0.25s linear;
+}
+@media only screen and (max-width: 1023px) {
+  .menu__link {
+    margin-right: 0;
+    line-height: 70px;
+  }
+  .menu__link:hover {
+    text-decoration: underline;
+  }
 }
 @media only screen and (max-width: 639px) {
   .menu__link {
@@ -175,7 +163,8 @@
   .icon--vk {
     width: 32px;
     height: 32px;
-    right: 210px;
+    top: 25px;
+    right: 100px;
   }
 }
 
@@ -219,7 +208,8 @@
   .icon--insta {
     width: 32px;
     height: 32px;
-    right: 160px;
+    top: 25px;
+    right: 50px;
   }
 }
 
@@ -423,6 +413,13 @@
     width: 300px;
     font-size: 2rem;
     line-height: 24px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .save-life__text--pos {
+    max-width: 204px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -746,20 +743,30 @@
   height: 1px;
   display: block;
   background-color: #EEBF3A;
-  top: 69px;
-  left: -110px;
+  top: 16%;
+  left: -8%;
   width: 50%;
   position: absolute;
+}
+@media only screen and (max-width: 639px) {
+  .underline::before {
+    top: 25px;
+  }
 }
 .underline::after {
   content: "";
   height: 1px;
   display: block;
   background-color: #EEBF3A;
-  top: 69px;
-  right: -110px;
+  top: 16%;
+  right: -8%;
   width: 50%;
   position: absolute;
+}
+@media only screen and (max-width: 639px) {
+  .underline::after {
+    top: 25px;
+  }
 }
 
 @media (max-width: 1269px) {
@@ -2914,6 +2921,7 @@ img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 2px;
+  z-index: 1000;
 }
 
 /* on activation */
@@ -2930,6 +2938,36 @@ img {
 }
 
 #toggle.on + #menu {
+  position: fixed;
   opacity: 1;
   visibility: visible;
+}
+
+.showMenu {
+  top: 10vh;
+  transform: translateY(0);
+}
+
+@media only screen and (max-width: 1023px) {
+  .showYellow {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: #FFC41E;
+    z-index: 999;
+  }
+}
+.showYellow::before {
+  content: "";
+  position: absolute;
+  top: 376px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.toggle-hidden {
+  position: fixed;
 }
