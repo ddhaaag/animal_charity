@@ -74,7 +74,7 @@ body {
 }
 
 img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
     // height: auto;
 }
@@ -91,8 +91,99 @@ img {
     // min-height: 825px;   
     position: relative;
 
+    // &::after {
+    //         content: '';
+    //         background-image: url(../img/illbebest.png);
+    //         background-repeat: no-repeat;
+    //         left: 77px;
+    //         top: 375px;
+    //         position: absolute;
+    //         min-width: 772px;
+    //         min-height: 404px;  
+    //         z-index: -1;
+
+    //         @media only screen and (max-width: 1269px) {
+    //             max-width: 573px;
+    //             background-image: url(../img/illbebest-1269.png);
+    //             height: 300px;
+    //             top: 310px;
+    //             left: 100px;
+    //         }
+        
+    //         @media only screen and (max-width: 1023px) {
+    //             background-image: url(../img/illbebest-1023.png);
+    //             width: 423px;
+    //             height: 230px;
+    //             top: 185px;
+    //             left: 130px;
+    //         }
+        
+    //         @media only screen and (max-width: 767px) {
+    //             background-image: url(../img/illbebest-767.png);
+    //             width: 386px;
+    //             top: 175px;
+    //             left: 75px;
+    //         }
+        
+    //         @media only screen and (max-width: 639px) {
+    //             background-image: url(../img/illbebest-639.png);
+    //             width: 217px;
+    //             height: 118px; 
+    //             top: 270px;
+    //             left: 110px;
+    //         }
+
+    // }
+
     @media only screen and (max-width: 1269px) {
         // min-height: 642px;
+    }
+}
+
+.header__illbebest {
+
+    &::after {
+            content: '';
+            background-image: url(../img/illbebest.png);
+            background-repeat: no-repeat;
+            left: -110px;
+            top: 375px;
+            position: absolute;
+            min-width: 772px;
+            min-height: 404px;  
+            z-index: -1;
+
+            @media only screen and (max-width: 1269px) {
+                max-width: 573px;
+                background-image: url(../img/illbebest-1269.png);
+                height: 300px;
+                top: 310px;
+                left: -110px;
+            }
+        
+            @media only screen and (max-width: 1023px) {
+                background-image: url(../img/illbebest-1023.png);
+                width: 423px;
+                height: 230px;
+                top: 185px;
+                left: -110px;
+            }
+        
+            @media only screen and (max-width: 767px) {
+                background-image: url(../img/illbebest-767.png);
+                width: 386px;
+                top: 175px;
+                left: -110px;
+            }
+        
+            @media only screen and (max-width: 639px) {
+                background-image: url(../img/illbebest-639.png);
+                width: 217px;
+                height: 118px; 
+                top: 270px;
+                left: -15px;
+            }
+
     }
 }
 
@@ -113,7 +204,6 @@ img {
 }
 
 .header__container::after {
-
     content: '';
     background: url(../img/dog-1.jpg) right top no-repeat;
     position: absolute;
@@ -121,7 +211,7 @@ img {
     height: 713px;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
 
     @media only screen and (max-width: 1269px) {
         max-width: 504px;
@@ -456,11 +546,11 @@ img {
 #toggle {
     // display: block;
     width: 28px;
-    height: 30px;
+    // height: 30px;
     display: none;
 
     @media only screen and (max-width: 1269px) {
-        width: 30px;
+        // width: 30px;
         // height: 49px;
         // right: 150px;
     }
@@ -528,7 +618,11 @@ img {
 // }
 
 .showMenu {
-    top: 10vh;
+
+    // @media all and (max-width: 1023px) {
+    //     top: 20vh;
+    // }
+    top: 70px;
     transform: translateY(0);
 }
 
@@ -538,7 +632,7 @@ img {
         top: 0;
         // left: 0;
         width: 100vw;
-        height: 10vh;
+        height: 70px;
         background-color: #FFC41E;
         z-index: 999;
     }
@@ -546,7 +640,7 @@ img {
     &::before {
         content: '';
         position: absolute;
-        top: 376px;
+        top: 380px;
         left: 0;
         width: 100vw;
         height: 100vh;

@@ -15,8 +15,8 @@
 
     <header class="header">
         <div class="background"></div>
-        <div class="container header__container">
-
+        <div class="container header__container ">
+            <div class="header__illbebest"></div>
             <a href="#menu" id="toggle" class="toggle-hidden"><span></span></a>
             
             <nav class="menu-list">
@@ -29,12 +29,11 @@
                 </ul>
             </nav>
 
-            <!-- <div class="header__social"> -->
+            <div class="header__social">
             <a href="#" class="icon icon--vk"> </a>
             <a href="#" class="icon icon--insta"> </a>
-            <!-- </div> -->
-
-
+            </div>
+        </div>
 
     </header>
 
@@ -50,8 +49,11 @@
                         поддерживаем хвостиков, которые оказались в пункте отлова и временного содержания в Гродно.
                     </p>
                 </div>
-                <p class="save-life__text save-life__text--pos">У животных, находящихся в пункте отлова и
-                    временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                <div class="save-life__text save-life__text--pos">
+                    <p>У животных, находящихся в пункте отлова и
+                        временного содержания бродячих животных, есть всего несколько дней до усыпления...</p>
+                </div>
+                
                 <div class="button">
                     <a href="#how-to-help" class="btn save-life__btn">Хочу помочь</a>
                 </div>
@@ -64,7 +66,12 @@
         <section class="info">
             <div class="container info__container">
                 <div class="info__row">
-                    <div class="info__img rect-img"></div>
+                    <div class="info__img">
+                        <div class="image-wrapper">
+                            <div class="image-wrapper__circle"></div>
+                            <div class="image-wrapper__circle--small"></div>
+                        </div>
+                    </div>
                     <div class="info__text-block">
                         <h3 class="info__title">Тут большие добрые сердца помогают жить маленьким сердечкам
                         </h3>
@@ -330,7 +337,7 @@
 
             <div class="container financial-help__container">
                 <div id="finance-help" class="finance__info-img img-nav">
-                    <img src="./img/btn_money-big.svg" alt="dog">
+                    <img class="bg" src="./img/btn_money-big.svg" alt="dog">
                 </div>
 
                 <div class="financial-help__outer">
@@ -387,7 +394,7 @@
         <section class="helph underline">
             <div class="container helph__container">
                 <div id="helph" class="helph__info-img img-nav">
-                    <img src="./img/btn_eat-big.svg" alt="dog">
+                    <img class="bg" src="./img/btn_eat-big.svg" alt="dog">
                 </div>
 
                 <div class="help-container">
@@ -458,7 +465,7 @@
         <section class="auto-help underline">
             <div class="container auto-help__container">
                 <div id="auto-help" class="auto-help__info-img img-nav">
-                    <img src="./img/btn_autohelp-big.svg" alt="dog">
+                    <img class="bg" src="./img/btn_autohelp-big.svg" alt="dog">
                 </div>
 
                 <div class="auto-help-container">
@@ -509,12 +516,16 @@
             <div class="container volunteering__container">
 
                 <div id="volunteering" class="volunteering__info-img img-nav">
-                    <img src="./img/btn_volanter-big.svg" alt="dog">
+                    <img class="bg" src="./img/btn_volanter-big.svg" alt="dog">
                 </div>
 
 
                 <div class="volun-inner volunteering__pos">
-                    <div class="volun-image"></div>
+                    <div class="volun-image">
+                        <div class="image-wrapper-volun">
+                            <div class="image-wrapper__circle-volun"></div>
+                        </div>
+                    </div>
                     <div class="volun-container">
                         <div class="volun__info">
                             <h3 class="volun__title">Волонтерство</h3>
