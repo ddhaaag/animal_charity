@@ -831,7 +831,7 @@
 }
 @media all and (max-width: 1269px) {
   .image-wrapper__circle::after {
-    background: url(/img/safe-dog-1269.png) no-repeat;
+    background: url(../img/safe-dog-1269.png) no-repeat;
     width: 323px;
     height: 323px;
     top: 20px;
@@ -840,7 +840,7 @@
 }
 @media all and (max-width: 1023px) {
   .image-wrapper__circle::after {
-    background: url(/img/safe-dog-1023.png) no-repeat;
+    background: url(../img/safe-dog-1023.png) no-repeat;
     width: 244px;
     height: 244px;
     top: 15px;
@@ -849,7 +849,7 @@
 }
 @media all and (max-width: 767px) {
   .image-wrapper__circle::after {
-    background: url(/img/safe-dog-767.png) no-repeat;
+    background: url(../img/safe-dog-767.png) no-repeat;
     width: 173px;
     height: 173px;
     top: 10px;
@@ -2321,6 +2321,11 @@
   display: flex;
   justify-content: flex-start;
 }
+@media all and (max-width: 767px) {
+  .volun-inner {
+    flex-direction: column;
+  }
+}
 
 .volun-container {
   flex: 0 1 50%;
@@ -2368,7 +2373,7 @@
 }
 @media all and (max-width: 1023px) {
   .image-wrapper-volun::after {
-    height: 273px;
+    height: 300px;
     width: 400px;
     top: 36px;
     left: -300px;
@@ -2376,8 +2381,8 @@
 }
 @media all and (max-width: 767px) {
   .image-wrapper-volun::after {
-    height: 193px;
-    width: 400px;
+    height: 212px;
+    width: 370px;
     top: 36px;
     left: -215px;
   }
@@ -2395,7 +2400,7 @@
 @media all and (max-width: 1269px) {
   .image-wrapper__circle-volun {
     width: 362px;
-    height: 362px;
+    height: 390px;
     top: 36px;
     right: 20px;
   }
@@ -2403,15 +2408,15 @@
 @media all and (max-width: 1023px) {
   .image-wrapper__circle-volun {
     width: 273px;
-    height: 273px;
+    height: 300px;
     top: 36px;
     right: 20px;
   }
 }
 @media all and (max-width: 767px) {
   .image-wrapper__circle-volun {
-    height: 193px;
-    width: 193px;
+    height: 212px;
+    width: 212px;
     top: 36px;
     left: 24%;
   }
@@ -2428,7 +2433,7 @@
 }
 @media all and (max-width: 1269px) {
   .image-wrapper__circle-volun::after {
-    background: url(../img/volunt-1024.png) no-repeat;
+    background: url(../img/volun-1024.png) no-repeat;
     width: 349px;
     height: 349px;
     top: 20px;
@@ -2437,18 +2442,18 @@
 }
 @media all and (max-width: 1023px) {
   .image-wrapper__circle-volun::after {
-    background: url(/img/safe-dog-1023.png) no-repeat;
-    width: 244px;
-    height: 244px;
+    background: url(../img/volun-768.png) no-repeat;
+    width: 268px;
+    height: 268px;
     top: 15px;
     right: 15px;
   }
 }
 @media all and (max-width: 767px) {
   .image-wrapper__circle-volun::after {
-    background: url(/img/safe-dog-767.png) no-repeat;
-    width: 173px;
-    height: 173px;
+    background: url(/img/volun-640.png) no-repeat;
+    width: 190px;
+    height: 190px;
     top: 10px;
     right: 10px;
   }
@@ -2462,6 +2467,12 @@
   .volun__info {
     max-width: 323px;
     margin-top: 26px;
+  }
+}
+@media all and (max-width: 767px) {
+  .volun__info {
+    max-width: 382px;
+    margin-top: 50px;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -2484,6 +2495,14 @@
     line-height: 24px;
   }
 }
+@media all and (max-width: 767px) {
+  .volun__title {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
 @media only screen and (max-width: 639px) {
   .volun__title {
     font-size: 16px;
@@ -2494,6 +2513,12 @@
 
 .volun__text {
   margin-bottom: 6px;
+}
+@media all and (max-width: 767px) {
+  .volun__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 @media only screen and (max-width: 639px) {
   .volun__text {
@@ -2531,6 +2556,11 @@
     padding-top: 40px;
   }
 }
+@media all and (max-width: 767px) {
+  .news__title {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 639px) {
   .news__title {
     font-size: 16px;
@@ -2552,6 +2582,12 @@
 @media (max-width: 1269px) {
   .news-content__text {
     max-width: 433px;
+  }
+}
+@media all and (max-width: 767px) {
+  .news-content__text {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -2582,6 +2618,12 @@
 .news-content__img {
   width: 79px;
   height: 79px;
+}
+@media all and (max-width: 767px) {
+  .news-content__img {
+    width: 79px;
+    height: 79px;
+  }
 }
 
 /* ABOUT */

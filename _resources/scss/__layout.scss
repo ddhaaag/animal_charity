@@ -848,7 +848,7 @@
         height: 464px;
 
         @media all and (max-width: 1269px) {
-            background: url(/img/safe-dog-1269.png) no-repeat;
+            background: url(../img/safe-dog-1269.png) no-repeat;
             width: 323px;
             height: 323px;
             top: 20px;
@@ -856,7 +856,7 @@
         }
 
         @media all and (max-width: 1023px) {
-            background: url(/img/safe-dog-1023.png) no-repeat;
+            background: url(../img/safe-dog-1023.png) no-repeat;
             width: 244px;
             height: 244px;
             top: 15px;
@@ -864,7 +864,7 @@
         }
 
         @media all and (max-width: 767px) {
-            background: url(/img/safe-dog-767.png) no-repeat;
+            background: url(../img/safe-dog-767.png) no-repeat;
             width: 173px;
             height: 173px;
             top: 10px;
@@ -2313,6 +2313,10 @@
 .volun-inner {
     display: flex;
     justify-content: flex-start;
+
+    @media all and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .volun-container {
@@ -2360,15 +2364,15 @@
         }
 
         @media all and (max-width: 1023px) {
-            height: 273px;
+            height: 300px;
             width: 400px;
             top: 36px;
             left: -300px;
         }
 
         @media all and (max-width: 767px) {
-            height: 193px;
-            width: 400px;
+            height: 212px;
+            width: 370px;
             top: 36px;
             left: -215px;
         }
@@ -2386,21 +2390,21 @@
 
     @media all and (max-width: 1269px) {
         width: 362px;
-        height: 362px;
+        height: 390px;
         top: 36px;
         right: 20px;
     }
 
     @media all and (max-width: 1023px) {
         width: 273px;
-        height: 273px;
+        height: 300px;
         top: 36px;
         right: 20px;
     }
 
     @media all and (max-width: 767px) {
-        height: 193px;
-        width: 193px;
+        height: 212px;
+        width: 212px;
         top: 36px;
         left: 24%;
     }
@@ -2416,7 +2420,7 @@
         height: 464px;
 
         @media all and (max-width: 1269px) {
-            background: url(../img/volunt-1024.png) no-repeat;
+            background: url(../img/volun-1024.png) no-repeat;
             width: 349px;
             height: 349px;
             top: 20px;
@@ -2424,17 +2428,17 @@
         }
 
         @media all and (max-width: 1023px) {
-            background: url(/img/safe-dog-1023.png) no-repeat;
-            width: 244px;
-            height: 244px;
+            background: url(../img/volun-768.png) no-repeat;
+            width: 268px;
+            height: 268px;
             top: 15px;
             right: 15px;
         }
 
         @media all and (max-width: 767px) {
-            background: url(/img/safe-dog-767.png) no-repeat;
-            width: 173px;
-            height: 173px;
+            background: url(/img/volun-640.png) no-repeat;
+            width: 190px;
+            height: 190px;
             top: 10px;
             right: 10px;
         }
@@ -2476,6 +2480,11 @@
         margin-top: 26px;
     }
 
+    @media all and (max-width: 767px) {
+        max-width: 382px;
+        margin-top: 50px;
+    }
+
     @media only screen and (max-width: 639px) {
         max-width: 300px;
         margin-top: 250px;
@@ -2494,6 +2503,13 @@
         line-height: 24px;
     }
 
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
     @media only screen and (max-width: 639px) {
         font-size: 16px;
         line-height: 24px;
@@ -2503,6 +2519,11 @@
 
 .volun__text {
     margin-bottom: 6px;
+
+    @media all and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
     @media only screen and (max-width: 639px) {
         font-size: 14px;
@@ -2539,6 +2560,10 @@
         padding-top: 40px;
     }
 
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+    }
+
     @media only screen and (max-width: 639px) {
         font-size: 16px;
         line-height: 24px;
@@ -2559,6 +2584,11 @@
 
     @media (max-width: 1269px) {
         max-width: 433px;
+    }
+
+    @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 20px;
     }
 
     @media only screen and (max-width: 639px) {
@@ -2586,6 +2616,11 @@
 .news-content__img {
     width: 79px;
     height: 79px;
+
+    @media all and (max-width: 767px) {
+        width: 79px;
+        height: 79px;
+    }
 }
 
 
